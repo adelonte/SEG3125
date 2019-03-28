@@ -1,699 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Title -->
-  <title>Form</title>
-
-  <!-- Required Meta Tags Always Come First -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
-
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-  <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-  <link rel="stylesheet" href="../../assets/vendor/summernote/dist/summernote-lite.css">
-  <link rel="stylesheet" href="../../assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
-  <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
-
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../../assets/css/theme.css">
-</head>
-<body>
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md" style="margin-bottom:25px;"
-          data-header-fix-moment="500"
-          data-header-fix-effect="slide">
-
+  <head>
+    <!-- Title -->
+    <title>Form</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../assets/vendor/summernote/dist/summernote-lite.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md" style="margin-bottom:25px;"
+      data-header-fix-moment="500"
+      data-header-fix-effect="slide">
       <div class="u-header__section">
-      <!-- Topbar -->
-      <div class="container u-header__hide-content pt-2">
-        <div class="d-flex align-items-center">
-          <!-- Language -->
-          <div class="position-relative">
-            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-               aria-controls="languageDropdown"
-               aria-haspopup="true"
-               aria-expanded="false"
-               data-unfold-event="hover"
-               data-unfold-target="#languageDropdown"
-               data-unfold-type="css-animation"
-               data-unfold-duration="300"
-               data-unfold-delay="300"
-               data-unfold-hide-on-scroll="true"
-               data-unfold-animation-in="slideInUp"
-               data-unfold-animation-out="fadeOut">
-               <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/ca.svg" alt="SVG">
+        <!-- Topbar -->
+        <div class="container u-header__hide-content pt-2">
+          <div class="d-flex align-items-center">
+            <!-- Language -->
+            <div class="position-relative">
+              <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+                aria-controls="languageDropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-unfold-event="hover"
+                data-unfold-target="#languageDropdown"
+                data-unfold-type="css-animation"
+                data-unfold-duration="300"
+                data-unfold-delay="300"
+                data-unfold-hide-on-scroll="true"
+                data-unfold-animation-in="slideInUp"
+                data-unfold-animation-out="fadeOut">
+              <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/ca.svg" alt="SVG">
               <span class="d-inline-block d-sm-none">CA</span>
               <span class="d-none d-sm-inline-block">Canada</span>
-            </a>
-
-            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-              <a class="dropdown-item active" href="#">English</a>
-              <a class="dropdown-item" href="#">French</a>
-
-            </div>
-          </div>
-          <!-- End Language -->
-
-          <div class="ml-auto">
-            <!-- Jump To -->
-            <div class="d-inline-block d-sm-none position-relative mr-2">
-              <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-                 aria-controls="jumpToDropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="hover"
-                 data-unfold-target="#jumpToDropdown"
-                 data-unfold-type="css-animation"
-                 data-unfold-duration="300"
-                 data-unfold-delay="300"
-                 data-unfold-hide-on-scroll="true"
-                 data-unfold-animation-in="slideInUp"
-                 data-unfold-animation-out="fadeOut">
-                Jump to
               </a>
-
-              <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-
-                <a class="dropdown-item" href="../../html/pages/contacts-agency.html">Contact Us</a>
+              <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
+                <a class="dropdown-item active" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
               </div>
             </div>
-            <!-- End Jump To -->
-
-            <!-- Links -->
-            <div class="d-none d-sm-inline-block ml-sm-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../pages/contacts-agency.html">About</a>
-                </li>
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../pages/contacts-agency.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Links -->
-          </div>
-
-        </div>
-      </div>
-      <!-- End Topbar -->
-
-      <div id="logoAndNav" class="container">
-        <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
-          <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html" aria-label="Front">
-            <div class="col-md-6 col-xs-6">
-              <img src="../../design/logo/Logo.png"  class="img-fluid" alt="img-responsive">
-            </div>
-            <span class="u-header__navbar-brand-text"></span>
-          </a>
-          <!-- End Logo -->
-
-          <!-- Responsive Toggle Button -->
-          <button type="button" class="navbar-toggler btn u-hamburger"
-                  aria-label="Toggle navigation"
+            <!-- End Language -->
+            <div class="ml-auto">
+              <!-- Jump To -->
+              <div class="d-inline-block d-sm-none position-relative mr-2">
+                <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+                  aria-controls="jumpToDropdown"
+                  aria-haspopup="true"
                   aria-expanded="false"
-                  aria-controls="navBar"
-                  data-toggle="collapse"
-                  data-target="#navBar">
+                  data-unfold-event="hover"
+                  data-unfold-target="#jumpToDropdown"
+                  data-unfold-type="css-animation"
+                  data-unfold-duration="300"
+                  data-unfold-delay="300"
+                  data-unfold-hide-on-scroll="true"
+                  data-unfold-animation-in="slideInUp"
+                  data-unfold-animation-out="fadeOut">
+                Jump to
+                </a>
+                <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
+                  <a class="dropdown-item" href="../../html/pages/contacts-agency.html">Contact Us</a>
+                </div>
+              </div>
+              <!-- End Jump To -->
+              <!-- Links -->
+              <div class="d-none d-sm-inline-block ml-sm-auto">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item mr-0">
+                    <a class="u-header__navbar-link" href="../pages/contacts-agency.html">About</a>
+                  </li>
+                  <li class="list-inline-item mr-0">
+                    <a class="u-header__navbar-link" href="../pages/contacts-agency.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Links -->
+            </div>
+          </div>
+        </div>
+        <!-- End Topbar -->
+        <div id="logoAndNav" class="container">
+          <!-- Nav -->
+          <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+            <!-- Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html" aria-label="Front">
+              <div class="col-md-6 col-xs-6">
+                <img src="../../design/logo/Logo.png"  class="img-fluid" alt="img-responsive">
+              </div>
+              <span class="u-header__navbar-brand-text"></span>
+            </a>
+            <!-- End Logo -->
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navBar"
+              data-toggle="collapse"
+              data-target="#navBar">
             <span id="hamburgerTrigger" class="u-hamburger__box">
-              <span class="u-hamburger__inner"></span>
+            <span class="u-hamburger__inner"></span>
             </span>
-          </button>
-          <!-- End Responsive Toggle Button -->
-
-          <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
-            <ul class="navbar-nav u-header__navbar-nav">
-              <!-- Home -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="../home/index.html" aria-haspopup="true" aria-expanded="false">Home</a>
-              </li>
-              <!-- End Home -->
-
-              <!-- Pages -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+            </button>
+            <!-- End Responsive Toggle Button -->
+            <!-- Navigation -->
+            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+              <ul class="navbar-nav u-header__navbar-nav">
+                <!-- Home -->
+                <li class="nav-item hs-has-mega-menu u-header__nav-item">
+                  <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="../home/index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+                </li>
+                <!-- End Home -->
+                <!-- Pages -->
+                <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="javascript:;" aria-haspopup="true" aria-expanded="false">Universities</a>
-
-
-              </li>
-              <!-- End Pages -->
-              <!-- Button -->
-              <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="../../html/form/form.html" target="_blank">
+                  <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="javascript:;" aria-haspopup="true" aria-expanded="false">Universities</a>
+                </li>
+                <!-- End Pages -->
+                <!-- Button -->
+                <li class="nav-item u-header__nav-last-item">
+                  <a class="btn btn-sm btn-primary transition-3d-hover" href="../../html/form/form.html" target="_blank">
                   Start Now
-                </a>
-              </li>
-              <!-- End Button -->
-            </ul>
-          </div>
-          <!-- End Navigation -->
-        </nav>
-        <!-- End Nav -->
-      </div>
-    </div>
-  </header>
-  <!-- ========== END HEADER ========== -->
-
-  <!-- ========== MAIN ========== -->
-  <main id="content" role="main">
-    <!-- Hero Section -->
-    <div id="SVGhireUsBg" class="svg-preloader position-relative gradient-half-primary-v1">
-      <div class="container space-2 space-top-md-4 space-top-lg-3">
-        <div class="row justify-content-lg-between align-items-center">
-          <div class="col-md-6 col-lg-5">
-            <h1 class="display-4 font-size-md-down-5 text-white mb-4"><strong>We can help you find the right  <span class="text-warning">school</span></strong></h1>
-            <p class="lead text-white-70">Fill in the information below to find out about your eligibility.</p>
-          </div>
-          <div class="col-md-6">
-            <img class="js-svg-injector" src="../../assets/svg/flat-icons/contact-us.svg" alt="SVG Illustration"
-                 data-parent="#SVGhireUsBg">
-          </div>
+                  </a>
+                </li>
+                <!-- End Button -->
+              </ul>
+            </div>
+            <!-- End Navigation -->
+          </nav>
+          <!-- End Nav -->
         </div>
       </div>
-
-      <!-- SVG Background -->
-      <figure class="position-absolute right-0 bottom-0 left-0">
-        <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description"
-             data-parent="#SVGhireUsBg">
-      </figure>
-      <!-- End SVG Background Section -->
-    </div>
-
-    <!-- Content Section -->
-
-    <div class="bg-light">
-      <div class="container space-2">
-
-
-
-        <!-- Personal Info Form -->
-        <form class="js-validate">
-
-          <!-- Title -->
-          <div class="mb-3">
-            <h2 class="h5 mb-0">Education</h2>
+    </header>
+    <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main">
+      <!-- Hero Section -->
+      <div id="SVGhireUsBg" class="svg-preloader position-relative gradient-half-primary-v1">
+        <div class="container space-2 space-top-md-4 space-top-lg-3">
+          <div class="row justify-content-lg-between align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <h1 class="display-4 font-size-md-down-5 text-white mb-4"><strong>We can help you find the right  <span class="text-warning">school</span></strong></h1>
+              <p class="lead text-white-70">Fill in the information below to find out about your eligibility.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="js-svg-injector" src="../../assets/svg/flat-icons/contact-us.svg" alt="SVG Illustration"
+                data-parent="#SVGhireUsBg">
+            </div>
           </div>
-          <!-- End Title -->
-          <hr class="mt-1 mb-7">
-
-          <div class="row">
-            <!-- Level of Education -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="form-label">
+        </div>
+        <!-- SVG Background -->
+        <figure class="position-absolute right-0 bottom-0 left-0">
+          <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description"
+            data-parent="#SVGhireUsBg">
+        </figure>
+        <!-- End SVG Background Section -->
+      </div>
+      <!-- Content Section -->
+      <div class="bg-light">
+        <div class="container space-2">
+          <!-- Personal Info Form -->
+          <form class="js-validate">
+            <!-- Title -->
+            <div class="mb-3">
+              <h2 class="h5 mb-0">Education</h2>
+            </div>
+            <!-- End Title -->
+            <hr class="mt-1 mb-7">
+            <div class="row">
+              <!-- Level of Education -->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label class="form-label">
                   Highest level of education
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <select class="custom-select" required>
-                    <option value="">Select education</option>
-                    <option value="languageSelect1">High School</option>
-                    <option value="languageSelect2">Diploma</option>
-                    <option value="languageSelect3">Bachelor's</option>
-                    <option value="languageSelect4">Master's</option>
-                    <option value="languageSelect4">Phd</option>
-                  </select>
+                  </label>
+                  <div class="form-group">
+                    <select class="custom-select" required>
+                      <option value="">Select education</option>
+                      <option value="languageSelect1">High School</option>
+                      <option value="languageSelect2">Diploma</option>
+                      <option value="languageSelect3">Bachelor's</option>
+                      <option value="languageSelect4">Master's</option>
+                      <option value="languageSelect4">Phd</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- End Level of Education -->
-
-
-            <!-- Program of Study-->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label id="organizationLabel" class="form-label">
+              <!-- End Level of Education -->
+              <!-- Program of Study-->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label id="organizationLabel" class="form-label">
                   Program of Study
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" name="organization"  placeholder="Enter your program of study " aria-label="Enter your program of study" required
-                         data-msg="Please enter your program of study"
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                  </label>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="organization"  placeholder="Enter your program of study " aria-label="Enter your program of study" required
+                      data-msg="Please enter your program of study"
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
+                  </div>
                 </div>
               </div>
+              <!-- End Program of Study -->
             </div>
-            <!-- End Program of Study -->
-          </div>
-
-          <div class="row">
-            <!-- GPA -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label id="gpaLabel" class="form-label">
+            <div class="row">
+              <!-- GPA -->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label id="gpaLabel" class="form-label">
                   GPA
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
-                         data-msg="Please enter your gpa"
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                  </label>
+                  <div class="form-group">
+                    <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
+                      data-msg="Please enter your gpa"
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- End GPA -->
-
-
-          <!-- Title -->
-          <div class="mb-3">
-            <h2 class="h5 mb-0">Program</h2>
-          </div>
-          <!-- End Title -->
-          <hr class="mt-1 mb-7">
-
-          <div class="row">
-            <!-- Level of Education -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="form-label">
+            <!-- End GPA -->
+            <!-- Title -->
+            <div class="mb-3">
+              <h2 class="h5 mb-0">Program</h2>
+            </div>
+            <!-- End Title -->
+            <hr class="mt-1 mb-7">
+            <div class="row">
+              <!-- Level of Education -->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label class="form-label">
                   Intended level of study
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option value="">Select level of study</option>
-                    <option value="languageSelect1">High School</option>
-                    <option value="languageSelect3">Bachelor's</option>
-                    <option value="languageSelect4">Master's</option>
-                    <option value="languageSelect4">Phd</option>
-                  </select>
+                  </label>
+                  <div class="form-group">
+                    <select class="custom-select">
+                      <option value="">Select level of study</option>
+                      <option value="languageSelect1">High School</option>
+                      <option value="languageSelect3">Bachelor's</option>
+                      <option value="languageSelect4">Master's</option>
+                      <option value="languageSelect4">Phd</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- End Level of Education -->
-
-
-            <!-- Program of Study-->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="form-label">
+              <!-- End Level of Education -->
+              <!-- Program of Study-->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label class="form-label">
                   Intended program of Study
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option value="">Select your program of study</option>
-                    <option value="languageSelect1">Science</option>
-                    <option value="languageSelect3">Arts</option>
-                    <option value="languageSelect4">Engineering</option>
-                    <option value="languageSelect4">Business</option>
-                  </select>
+                  </label>
+                  <div class="form-group">
+                    <select class="custom-select">
+                      <option value="">Select your program of study</option>
+                      <option value="languageSelect1">Science</option>
+                      <option value="languageSelect3">Arts</option>
+                      <option value="languageSelect4">Engineering</option>
+                      <option value="languageSelect4">Business</option>
+                    </select>
+                  </div>
                 </div>
               </div>
+              <!-- End Program of Study -->
             </div>
-            <!-- End Program of Study -->
-          </div>
-
-          <div class="row">
-            <!-- Location -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="form-label">
+            <div class="row">
+              <!-- Location -->
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label class="form-label">
                   Desired Location of Study
                   <span class="text-danger">*</span>
-                </label>
-
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option value="">Select your desired location</option>
-                    <option value="languageSelect1">Alberta</option>
-                    <option value="languageSelect3">British Columbia</option>
-                    <option value="languageSelect4">Manitoba</option>
-                    <option value="languageSelect4">Saskatchewan</option>
-                    <option value="languageSelect4">Ontario</option>
-                    <option value="languageSelect4">Quebec</option>
-                    <option value="languageSelect4">Prince Edward Island</option>
-                    <option value="languageSelect4">Nova Scotia</option>
-                    <option value="languageSelect4">Newfoundland and Labrador</option>
-                  </select>
+                  </label>
+                  <div class="form-group">
+                    <select class="custom-select">
+                      <option value="">Select your desired location</option>
+                      <option value="languageSelect1">Alberta</option>
+                      <option value="languageSelect3">British Columbia</option>
+                      <option value="languageSelect4">Manitoba</option>
+                      <option value="languageSelect4">Saskatchewan</option>
+                      <option value="languageSelect4">Ontario</option>
+                      <option value="languageSelect4">Quebec</option>
+                      <option value="languageSelect4">Prince Edward Island</option>
+                      <option value="languageSelect4">Nova Scotia</option>
+                      <option value="languageSelect4">Newfoundland and Labrador</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="form-label">
-					Budget per year
+              <div class="col-sm-6 mb-6">
+                <div class="js-form-message">
+                  <label class="form-label">
+                  Budget per year
                   <span class="text-danger">*</span>
-                </label>
-                <div class="form-group">
-              <select class="form-control custom-select" required
+                  </label>
+                  <div class="form-group">
+                    <select class="form-control custom-select" required
                       data-msg="Please select your budget."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
-				<option value="">Select a budget</option>
-                <option value="budget0">$10,000 to $20,000</option>
-                <option value="budget1">$20,000 to $40,000</option>
-                <option value="budget2">$40,000 to $60,000</option>
-                <option value="budget3">$60,000+</option>
-              </select>
+                      <option value="">Select a budget</option>
+                      <option value="budget0">$10,000 to $20,000</option>
+                      <option value="budget1">$20,000 to $40,000</option>
+                      <option value="budget2">$40,000 to $60,000</option>
+                      <option value="budget3">$60,000+</option>
+                    </select>
+                  </div>
                 </div>
               </div>
+              <!-- End Location -->
             </div>
-          <!-- End Location -->
-			</div>
-
-		</form>
-        <!-- End Social Profiles Form -->
-      </div>
-
+          </form>
+          <!-- End Social Profiles Form -->
+        </div>
         <hr class="my-7">
-
-    </div>
-
-    <!-- End Content Section -->
-  </main>
-
-  <!-- ========== END MAIN ========== -->
-
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <!-- Lists -->
-    <div class="border-bottom">
-      <div class="container space-2">
-        <div class="row justify-content-md-between">
-
-          <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-            <h4 class="h6 font-weight-semi-bold">About</h4>
-
-            <!-- List Group -->
-            <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-
-            </ul>
-            <!-- End List Group -->
-          </div>
+      </div>
+      <!-- End Content Section -->
+    </main>
+    <!-- ========== END MAIN ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <!-- Lists -->
+      <div class="border-bottom">
+        <div class="container space-2">
+          <div class="row justify-content-md-between">
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+              <h4 class="h6 font-weight-semi-bold">About</h4>
+              <!-- List Group -->
+              <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
+                <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
+              </ul>
+              <!-- End List Group -->
+            </div>
           </div>
         </div>
       </div>
-    <!-- End Lists -->
-
-    <!-- Copyright -->
-    <div class="container text-center space-1">
-      <!-- Logo -->
-
-      <!-- End Logo -->
-      <p class="small text-muted">&copy; Internation Admissions. 2018. All rights reserved.</p>
-    </div>
-    <!-- End Copyright -->
-  </footer>
-  <!-- ========== END FOOTER ========== -->
-
-  <!-- ========== SECONDARY CONTENTS ========== -->
-  <!-- Account Sidebar Navigation -->
-  <aside id="sidebarContent" class="u-sidebar">
-    <div class="u-sidebar__scroller">
-      <div class="u-sidebar__container">
-        <div class="u-sidebar--account__footer-offset">
-          <!-- Toggle Button -->
-          <div class="d-flex justify-content-between align-items-center pt-4 px-7">
-            <h3 class="h6 mb-0">My Account</h3>
-
-            <button type="button" class="close ml-auto"
-                    aria-controls="sidebarContent"
+      <!-- End Lists -->
+      <!-- Copyright -->
+      <div class="container text-center space-1">
+        <!-- Logo -->
+        <!-- End Logo -->
+        <p class="small text-muted">&copy; Internation Admissions. 2018. All rights reserved.</p>
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+    <!-- ========== SECONDARY CONTENTS ========== -->
+    <!-- Account Sidebar Navigation -->
+    <aside id="sidebarContent" class="u-sidebar">
+      <div class="u-sidebar__scroller">
+        <div class="u-sidebar__container">
+          <div class="u-sidebar--account__footer-offset">
+            <!-- Toggle Button -->
+            <div class="d-flex justify-content-between align-items-center pt-4 px-7">
+              <h3 class="h6 mb-0">My Account</h3>
+              <button type="button" class="close ml-auto"
+                aria-controls="sidebarContent"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-unfold-event="click"
+                data-unfold-hide-on-scroll="false"
+                data-unfold-target="#sidebarContent"
+                data-unfold-type="css-animation"
+                data-unfold-animation-in="fadeInRight"
+                data-unfold-animation-out="fadeOutRight"
+                data-unfold-duration="500">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- End Toggle Button -->
+            <!-- Content -->
+            <div class="js-scrollbar u-sidebar__body">
+              <!-- Holder Info -->
+              <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
+                <div class="position-relative">
+                  <img class="u-sidebar--account__holder-img" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                  <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
+                </div>
+                <div class="ml-3">
+                  <span class="font-weight-semi-bold">Natalie Curtis <span class="badge badge-success ml-1">Pro</span></span>
+                  <span class="u-sidebar--account__holder-text">Lead Support Adviser</span>
+                </div>
+                <!-- Settings -->
+                <div class="btn-group position-relative ml-auto mb-auto">
+                  <a id="sidebar-account-settings-invoker" class="btn btn-xs btn-icon btn-text-secondary rounded" href="javascript:;" role="button"
+                    aria-controls="sidebar-account-settings"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    data-toggle="dropdown"
                     data-unfold-event="click"
-                    data-unfold-hide-on-scroll="false"
-                    data-unfold-target="#sidebarContent"
+                    data-unfold-target="#sidebar-account-settings"
                     data-unfold-type="css-animation"
-                    data-unfold-animation-in="fadeInRight"
-                    data-unfold-animation-out="fadeOutRight"
-                    data-unfold-duration="500">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- End Toggle Button -->
-
-          <!-- Content -->
-          <div class="js-scrollbar u-sidebar__body">
-            <!-- Holder Info -->
-            <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
-              <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
-                <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
-              </div>
-              <div class="ml-3">
-                <span class="font-weight-semi-bold">Natalie Curtis <span class="badge badge-success ml-1">Pro</span></span>
-                <span class="u-sidebar--account__holder-text">Lead Support Adviser</span>
-              </div>
-
-              <!-- Settings -->
-              <div class="btn-group position-relative ml-auto mb-auto">
-                <a id="sidebar-account-settings-invoker" class="btn btn-xs btn-icon btn-text-secondary rounded" href="javascript:;" role="button"
-                        aria-controls="sidebar-account-settings"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-toggle="dropdown"
-                        data-unfold-event="click"
-                        data-unfold-target="#sidebar-account-settings"
-                        data-unfold-type="css-animation"
-                        data-unfold-duration="300"
-                        data-unfold-delay="300"
-                        data-unfold-animation-in="slideInUp"
-                        data-unfold-animation-out="fadeOut">
+                    data-unfold-duration="300"
+                    data-unfold-delay="300"
+                    data-unfold-animation-in="slideInUp"
+                    data-unfold-animation-out="fadeOut">
                   <span class="fas fa-ellipsis-v btn-icon__inner"></span>
-                </a>
-
-                <div id="sidebar-account-settings" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="sidebar-account-settings-invoker">
-                  <a class="dropdown-item" href="#">Settings</a>
-                  <a class="dropdown-item" href="#">History</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Sign Out</a>
+                  </a>
+                  <div id="sidebar-account-settings" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="sidebar-account-settings-invoker">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">History</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                  </div>
                 </div>
-              </div>
-              <!-- End Settings -->
-            </header>
-            <!-- End Holder Info -->
-
-            <div class="u-sidebar__content--account">
-              <!-- List Links -->
-              <ul class="list-unstyled u-sidebar--account__list">
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="dashboard.html">
+                <!-- End Settings -->
+              </header>
+              <!-- End Holder Info -->
+              <div class="u-sidebar__content--account">
+                <!-- List Links -->
+                <ul class="list-unstyled u-sidebar--account__list">
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="dashboard.html">
                     <span class="fas fa-home u-sidebar--account__list-icon mr-2"></span>
                     Dashboard
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="profile.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="profile.html">
                     <span class="fas fa-user-circle u-sidebar--account__list-icon mr-2"></span>
                     Profile
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="my-tasks.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="my-tasks.html">
                     <span class="fas fa-tasks u-sidebar--account__list-icon mr-2"></span>
                     My tasks
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="projects.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="projects.html">
                     <span class="fas fa-layer-group u-sidebar--account__list-icon mr-2"></span>
                     Projects <span class="badge badge-danger float-right mt-1">3</span>
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="members.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="members.html">
                     <span class="fas fa-users u-sidebar--account__list-icon mr-2"></span>
                     Members
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="activity.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="activity.html">
                     <span class="fas fa-exchange-alt u-sidebar--account__list-icon mr-2"></span>
                     Activity
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="payment-methods.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="payment-methods.html">
                     <span class="fas fa-wallet u-sidebar--account__list-icon mr-2"></span>
                     Payment methods
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="plans.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="plans.html">
                     <span class="fas fa-cubes u-sidebar--account__list-icon mr-2"></span>
                     Plans
-                  </a>
-                </li>
-              </ul>
-              <!-- End List Links -->
-
-              <div class="u-sidebar--account__list-divider"></div>
-
-              <!-- List Links -->
-              <ul class="list-unstyled u-sidebar--account__list">
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="invite-friends.html">
+                    </a>
+                  </li>
+                </ul>
+                <!-- End List Links -->
+                <div class="u-sidebar--account__list-divider"></div>
+                <!-- List Links -->
+                <ul class="list-unstyled u-sidebar--account__list">
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="invite-friends.html">
                     <span class="fas fa-user-plus u-sidebar--account__list-icon mr-2"></span>
                     Invite friends
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="api-token.html">
+                    </a>
+                  </li>
+                  <li class="u-sidebar--account__list-item">
+                    <a class="u-sidebar--account__list-link" href="api-token.html">
                     <span class="fas fa-key u-sidebar--account__list-icon mr-2"></span>
                     API Token
-                  </a>
-                </li>
-              </ul>
-              <!-- End List Links -->
+                    </a>
+                  </li>
+                </ul>
+                <!-- End List Links -->
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Footer -->
-        <footer id="SVGwaveWithDots" class="svg-preloader u-sidebar__footer u-sidebar__footer--account">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/privacy.html">Privacy</a>
-            </li>
-            <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/terms.html">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="u-sidebar__footer--account__text" href="../pages/help.html">
+          <!-- Footer -->
+          <footer id="SVGwaveWithDots" class="svg-preloader u-sidebar__footer u-sidebar__footer--account">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item pr-3">
+                <a class="u-sidebar__footer--account__text" href="../pages/privacy.html">Privacy</a>
+              </li>
+              <li class="list-inline-item pr-3">
+                <a class="u-sidebar__footer--account__text" href="../pages/terms.html">Terms</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="u-sidebar__footer--account__text" href="../pages/help.html">
                 <i class="fas fa-info-circle"></i>
-              </a>
-            </li>
-          </ul>
-
-          <!-- SVG Background Shape -->
-          <div class="position-absolute right-0 bottom-0 left-0">
-            <img class="js-svg-injector" src="../../assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
-                   data-parent="#SVGwaveWithDots">
-          </div>
-          <!-- End SVG Background Shape -->
-        </footer>
-        <!-- End Footer -->
+                </a>
+              </li>
+            </ul>
+            <!-- SVG Background Shape -->
+            <div class="position-absolute right-0 bottom-0 left-0">
+              <img class="js-svg-injector" src="../../assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
+                data-parent="#SVGwaveWithDots">
+            </div>
+            <!-- End SVG Background Shape -->
+          </footer>
+          <!-- End Footer -->
+        </div>
       </div>
-    </div>
-  </aside>
-  <!-- End Account Sidebar Navigation -->
-  <!-- ========== END SECONDARY CONTENTS ========== -->
-
-  <!-- Go to Top -->
-  <a class="js-go-to u-go-to" href="#"
-    data-position='{"bottom": 15, "right": 15 }'
-    data-type="fixed"
-    data-offset-top="400"
-    data-compensation="#header"
-    data-show-effect="slideInUp"
-    data-hide-effect="slideOutDown">
+    </aside>
+    <!-- End Account Sidebar Navigation -->
+    <!-- ========== END SECONDARY CONTENTS ========== -->
+    <!-- Go to Top -->
+    <a class="js-go-to u-go-to" href="#"
+      data-position='{"bottom": 15, "right": 15 }'
+      data-type="fixed"
+      data-offset-top="400"
+      data-compensation="#header"
+      data-show-effect="slideInUp"
+      data-hide-effect="slideOutDown">
     <span class="fas fa-arrow-up u-go-to__inner"></span>
-  </a>
-  <!-- End Go to Top -->
-
-  <!-- JS Global Compulsory -->
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
-
-  <!-- JS Implementing Plugins -->
-  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="../../assets/vendor/summernote/dist/summernote-lite.js"></script>
-  <script src="../../assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
-  <script src="../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
-
-  <!-- JS Front -->
-  <script src="../../assets/js/hs.core.js"></script>
-  <script src="../../assets/js/components/hs.header.js"></script>
-  <script src="../../assets/js/components/hs.unfold.js"></script>
-  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
-  <script src="../../assets/js/components/hs.focus-state.js"></script>
-  <script src="../../assets/js/components/hs.validation.js"></script>
-  <script src="../../assets/js/components/hs.summernote-editor.js"></script>
-  <script src="../../assets/js/components/hs.range-datepicker.js"></script>
-  <script src="../../assets/js/components/hs.svg-injector.js"></script>
-  <script src="../../assets/js/components/hs.go-to.js"></script>
-
-  <!-- JS Plugins Init. -->
-  <script>
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+    </a>
+    <!-- End Go to Top -->
+    <!-- JS Global Compulsory -->
+    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../assets/vendor/summernote/dist/summernote-lite.js"></script>
+    <script src="../../assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+    <script src="../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- JS Front -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/components/hs.unfold.js"></script>
+    <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="../../assets/js/components/hs.focus-state.js"></script>
+    <script src="../../assets/js/components/hs.validation.js"></script>
+    <script src="../../assets/js/components/hs.summernote-editor.js"></script>
+    <script src="../../assets/js/components/hs.range-datepicker.js"></script>
+    <script src="../../assets/js/components/hs.svg-injector.js"></script>
+    <script src="../../assets/js/components/hs.go-to.js"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+      $(window).on('load', function () {
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 767.98,
+          hideTimeOut: 0
+        });
+      
+        // initialization of HSMegaMenu component
+        $('.js-breadcrumb-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991.98,
+          hideTimeOut: 0
+        });
+      
+        // initialization of svg injector module
+        $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
-
-      // initialization of HSMegaMenu component
-      $('.js-breadcrumb-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991.98,
-        hideTimeOut: 0
-      });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
-
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
-
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
-
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
+      
+      $(document).on('ready', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#header'));
+      
+        // initialization of unfold component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+          afterOpen: function () {
+            $(this).find('input[type="search"]').focus();
           }
-        }
+        });
+      
+        // initialization of malihu scrollbar
+        $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+        // initialization of forms
+        $.HSCore.components.HSFocusState.init();
+      
+        // initialization of form validation
+        $.HSCore.components.HSValidation.init('.js-validate', {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      
+        // initialization of text editors
+        $.HSCore.components.HSSummernoteEditor.init('.js-summernote-editor');
+      
+        // initialization of range datepicker
+        $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+      
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
       });
-
-      // initialization of text editors
-      $.HSCore.components.HSSummernoteEditor.init('.js-summernote-editor');
-
-      // initialization of range datepicker
-      $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
