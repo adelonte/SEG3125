@@ -110,9 +110,9 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html" aria-label="Front">
             <div class="col-md-6 col-xs-6">
-              <img src="../../design/logo/Logo.png"  class="img-fluid" alt="img-responsive"></img>
+              <img src="../../design/logo/Logo.png"  class="img-fluid" alt="img-responsive">
             </div>
             <span class="u-header__navbar-brand-text"></span>
           </a>
@@ -136,7 +136,7 @@
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
               <li class="nav-item hs-has-mega-menu u-header__nav-item">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="../home/index.html" aria-haspopup="true" aria-expanded="false">Home</a>
               </li>
               <!-- End Home -->
 
@@ -145,16 +145,11 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Universities</a>
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="javascript:;" aria-haspopup="true" aria-expanded="false">Universities</a>
 
 
               </li>
               <!-- End Pages -->
-
-
-
-
-
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
                 <a class="btn btn-sm btn-primary transition-3d-hover" href="../../html/form/form.html" target="_blank">
@@ -224,7 +219,7 @@
                 </label>
 
                 <div class="form-group">
-                  <select class="custom-select">
+                  <select class="custom-select" required>
                     <option value="">Select education</option>
                     <option value="languageSelect1">High School</option>
                     <option value="languageSelect2">Diploma</option>
@@ -248,7 +243,7 @@
                 </label>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" name="organization"  placeholder="Enter your program of study " aria-label="Enter your program of study" required aria-describedby="programofstudyLabel"
+                  <input type="text" class="form-control" name="organization"  placeholder="Enter your program of study " aria-label="Enter your program of study" required
                          data-msg="Please enter your program of study"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
@@ -268,20 +263,14 @@
                 </label>
 
                 <div class="form-group">
-                  <input class="form-control" type="tel" name="gpa"  placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
+                  <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
                          data-msg="Please enter your gpa"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
               </div>
-
             </div>
-
           </div>
-
-
-
-          
 
           <!-- End GPA -->
 
@@ -344,13 +333,13 @@
             <div class="col-sm-6 mb-6">
               <div class="js-form-message">
                 <label class="form-label">
-                  Intended program of Study
+                  Desired Location of Study
                   <span class="text-danger">*</span>
                 </label>
 
                 <div class="form-group">
                   <select class="custom-select">
-                    <option value="">Select your program of study</option>
+                    <option value="">Select your desired location</option>
                     <option value="languageSelect1">Alberta</option>
                     <option value="languageSelect3">British Columbia</option>
                     <option value="languageSelect4">Manitoba</option>
@@ -366,9 +355,9 @@
             </div>
 
             <div class="col-sm-6 mb-6">
-              <div clas="js-form-message">
+              <div class="js-form-message">
                 <label class="form-label">
-                  Tell us about your budget per years
+					Budget per year
                   <span class="text-danger">*</span>
                 </label>
                 <div class="form-group">
@@ -376,7 +365,8 @@
                       data-msg="Please select your budget."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
-                <option value="" selected>$10,000 to $20,000</option>
+				<option value="">Select a budget</option>
+                <option value="budget0">$10,000 to $20,000</option>
                 <option value="budget1">$20,000 to $40,000</option>
                 <option value="budget2">$40,000 to $60,000</option>
                 <option value="budget3">$60,000+</option>
@@ -385,9 +375,9 @@
               </div>
             </div>
           <!-- End Location -->
+			</div>
 
-
-
+		</form>
         <!-- End Social Profiles Form -->
       </div>
 
@@ -418,15 +408,9 @@
             </ul>
             <!-- End List Group -->
           </div>
-
-
-
-
-
           </div>
         </div>
       </div>
-    </div>
     <!-- End Lists -->
 
     <!-- Copyright -->
@@ -442,7 +426,7 @@
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Account Sidebar Navigation -->
-  <aside id="sidebarContent" class="u-sidebar" aria-labelledby="sidebarNavToggler">
+  <aside id="sidebarContent" class="u-sidebar">
     <div class="u-sidebar__scroller">
       <div class="u-sidebar__container">
         <div class="u-sidebar--account__footer-offset">
