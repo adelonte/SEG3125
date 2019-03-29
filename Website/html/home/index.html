@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="../../assets/css/theme.css">
 	<!-- CSS for icon -->
@@ -228,6 +230,9 @@
     <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
     <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
@@ -258,28 +263,28 @@
           breakpoint: 767.98,
           hideTimeOut: 0
         });
-      
+
         // initialization of svg injector module
         $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
-      
+
       $(document).on('ready', function () {
         // initialization of header
         $.HSCore.components.HSHeader.init($('#header'));
-      
+
         // initialization of unfold component
         $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
           afterOpen: function () {
             $(this).find('input[type="search"]').focus();
           }
         });
-      
+
         // initialization of malihu scrollbar
         $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-      
+
         // initialization of forms
         $.HSCore.components.HSFocusState.init();
-      
+
         // initialization of form validation
         $.HSCore.components.HSValidation.init('.js-validate', {
           rules: {
@@ -288,13 +293,13 @@
             }
           }
         });
-      
+
         // initialization of show animations
         $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-      
+
         // initialization of fancybox
         $.HSCore.components.HSFancyBox.init('.js-fancybox');
-      
+
         // initialization of text animation (typing)
         var typed = new Typed(".u-text-animation.u-text-animation--typing", {
           strings: ["select your program.", "apply for schools.", "obtain your student Visa."],
@@ -303,10 +308,10 @@
           backSpeed: 25,
           backDelay: 1500
         });
-      
+
         // initialization of slick carousel
         $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-      
+
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
       });

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../assets/vendor/summernote/dist/summernote-lite.css">
     <link rel="stylesheet" href="../../assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
+
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="../../assets/css/theme.css">
 	<!-- CSS for icon -->
@@ -233,10 +234,11 @@
                     <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
+                    <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter a value between 0-4" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
                       data-msg="Please enter your gpa."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
+
                   </div>
                 </div>
               </div>
@@ -318,7 +320,7 @@
                       <option value="nf">Newfoundland and Labrador</option>
                     </select>
 					<small id="locationHelpText" class="form-text text-muted">
-					   Try using CTRL+click to select multiple elements!
+					   Try using Shift+Click to select multiple elements!
 					</small>
                   </div>
                 </div>
@@ -415,7 +417,7 @@
           breakpoint: 767.98,
           hideTimeOut: 0
         });
-      
+
         // initialization of HSMegaMenu component
         $('.js-breadcrumb-menu').HSMegaMenu({
           event: 'hover',
@@ -423,28 +425,28 @@
           breakpoint: 991.98,
           hideTimeOut: 0
         });
-      
+
         // initialization of svg injector module
         $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
-      
+
       $(document).on('ready', function () {
         // initialization of header
         $.HSCore.components.HSHeader.init($('#header'));
-      
+
         // initialization of unfold component
         $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
           afterOpen: function () {
             $(this).find('input[type="search"]').focus();
           }
         });
-      
+
         // initialization of malihu scrollbar
         $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-      
+
         // initialization of forms
         $.HSCore.components.HSFocusState.init();
-      
+
         // initialization of form validation
         $.HSCore.components.HSValidation.init('.js-validate', {
           rules: {
@@ -453,13 +455,13 @@
             }
           }
         });
-      
+
         // initialization of text editors
         $.HSCore.components.HSSummernoteEditor.init('.js-summernote-editor');
-      
+
         // initialization of range datepicker
         $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
-      
+
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
       });
