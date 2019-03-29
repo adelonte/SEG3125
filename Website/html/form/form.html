@@ -301,7 +301,7 @@
                   <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <select class="custom-select" required multiple
+                    <select class="custom-select" required multiple aria-describedby="locationHelpText"
 					  data-msg="Please select your desired location(s) of study."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
@@ -315,6 +315,9 @@
                       <option value="ns">Nova Scotia</option>
                       <option value="nf">Newfoundland and Labrador</option>
                     </select>
+					<small id="locationHelpText" class="form-text text-muted">
+					   Try using CTRL+click to select multiple elements!
+					</small>
                   </div>
                 </div>
               </div>
