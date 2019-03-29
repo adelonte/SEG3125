@@ -174,7 +174,7 @@
       <div class="bg-light">
         <div class="container space-2">
           <!-- Personal Info Form -->
-          <form class="js-validate">
+          <form id="userinfo" class="js-validate">
             <!-- Title -->
             <div class="mb-3">
               <h2 class="h5 mb-0">Education</h2>
@@ -190,7 +190,10 @@
                     <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <select class="custom-select" required>
+                    <select class="custom-select" required
+					  data-msg="Please select your highest level of education."
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
                       <option value="">Select education</option>
                       <option value="prev_hs">High School</option>
                       <option value="prev_dip">Diploma</option>
@@ -211,7 +214,7 @@
                   </label>
                   <div class="form-group">
                     <input type="text" class="form-control" name="organization"  placeholder="Enter your program of study " aria-label="Enter your program of study" required
-                      data-msg="Please enter your program of study"
+                      data-msg="Please enter your program of study."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
                   </div>
@@ -229,7 +232,7 @@
                   </label>
                   <div class="form-group">
                     <input class="form-control" type="number" name="gpa" min="0" step="0.1" placeholder="Enter your gpa" aria-label="Enter your gpa" required aria-describedby="gpaLabel"
-                      data-msg="Please enter your gpa"
+                      data-msg="Please enter your gpa."
                       data-error-class="u-has-error"
                       data-success-class="u-has-success">
                   </div>
@@ -252,7 +255,10 @@
                   <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <select class="custom-select">
+                    <select class="custom-select" required
+					  data-msg="Please select your intended level of study."
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
                       <option value="">Select level of study</option>
                       <option value="post_hs">High School</option>
                       <option value="post_bac">Bachelor's</option>
@@ -271,7 +277,10 @@
                   <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <select class="custom-select">
+                    <select class="custom-select" required
+					  data-msg="Please select your intended program of study."
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
                       <option value="">Select your program of study</option>
                       <option value="prg_sci">Science</option>
                       <option value="prg_art">Arts</option>
@@ -288,12 +297,14 @@
               <div class="col-sm-6 mb-6">
                 <div class="js-form-message">
                   <label class="form-label">
-                  Desired Location of Study
+                  Desired Location(s) of Study
                   <span class="text-danger">*</span>
                   </label>
                   <div class="form-group">
-                    <select class="custom-select">
-                      <option value="">Select your desired location</option>
+                    <select class="custom-select" required multiple
+					  data-msg="Please select your desired location(s) of study."
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success">
                       <option value="al">Alberta</option>
                       <option value="bc">British Columbia</option>
                       <option value="mn">Manitoba</option>
