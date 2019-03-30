@@ -147,6 +147,9 @@
 <!-- ========== MAIN CONTENT ========== -->
 <main id="content" role="main">
   <!-- University Results Card Deck-->
+  <div id="sendSuccess" class="alert alert-success d-none sticky-top">
+    Your message was sucessfully sent.
+  </div>
 
   <div class="container d-lg-flex align-items-lg-center space-top-1">
 
@@ -350,7 +353,7 @@
 
     <hr class="mt-1 mb-7">
     <!-- Personal Info Form -->
-    <form class="js-validate">
+    <form id="infoForm" class="js-validate">
       <div class="row">
         <!-- First Name -->
         <div class="col-sm-6 mb-6">
@@ -361,8 +364,9 @@
             </label>
 
             <div class="form-group">
-              <input type="text" class="form-control" name="name"  placeholder="Enter your first name" aria-label="Enter your name" required aria-describedby="firstnameLabel"
-              data-msg="Please enter your first name."
+              <input type="text" class="form-control" id="fname" name="fname"  placeholder="Enter your first name" aria-label="Enter your name"  aria-describedby="firstnameLabel"
+              required
+			  data-msg="Please enter your first name."
               data-error-class="u-has-error"
               data-success-class="u-has-success">
             </div>
@@ -380,7 +384,7 @@
             </label>
 
             <div class="form-group">
-              <input type="text" class="form-control" name="name"  placeholder="Enter your last name" aria-label="Enter your name" required aria-describedby="lastnameLabel"
+              <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your last name" aria-label="Enter your name" required aria-describedby="lastnameLabel"
               data-msg="Please enter your last name."
               data-error-class="u-has-error"
               data-success-class="u-has-success">
@@ -403,7 +407,7 @@
         <div class="col-md-6 mb-3 mb-sm-6">
           <div class="js-form-message">
             <div class="form-group">
-              <select class="form-control custom-select" required
+              <select id="birthMonth" name="birthMonth" class="form-control custom-select" required
               data-msg="Please select month."
               data-error-class="u-has-error"
               data-success-class="u-has-success">
@@ -430,7 +434,7 @@
       <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
         <div class="js-form-message">
           <div class="form-group">
-            <select class="form-control custom-select" required
+            <select id="birthDay" name="birthDay" class="form-control custom-select" required
             data-msg="Please select date."
             data-error-class="u-has-error"
             data-success-class="u-has-success">
@@ -476,7 +480,7 @@
     <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
       <div class="js-form-message">
         <div class="form-group">
-          <select class="form-control custom-select" required
+          <select id="birthYear" name="birthYear" class="form-control custom-select" required
           data-msg="Please select year."
           data-error-class="u-has-error"
           data-success-class="u-has-success">
@@ -609,7 +613,7 @@
   <div class="col-sm-4 col-md-2 mb-6">
     <div class="js-form-message">
       <div class="form-group">
-        <select class="form-control custom-select" required
+        <select id="gender" name="gender" class="form-control custom-select" required
         data-msg="Please select your gender."
         data-error-class="u-has-error"
         data-success-class="u-has-success">
@@ -633,7 +637,7 @@
       </label>
 
       <div class="form-group">
-        <input type="email" class="form-control" name="email"  placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
         data-msg="Please enter a valid email address."
         data-error-class="u-has-error"
         data-success-class="u-has-success">
@@ -652,7 +656,7 @@
       </label>
 
       <div class="form-group">
-        <input type="text" class="form-control" name="Country"  placeholder="Enter your country" aria-label="Enter your country" required aria-describedby="locationLabel"
+        <input type="text" id="country" name="country" class="form-control" name="Country"  placeholder="Enter your country" aria-label="Enter your country" required aria-describedby="locationLabel"
         data-msg="Please enter your location."
         data-error-class="u-has-error"
         data-success-class="u-has-success">
@@ -672,7 +676,7 @@
       </label>
 
       <div class="form-group">
-        <input class="form-control" type="tel" name="phoneNumber"  placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
+        <input id="tel" name="tel" class="form-control" type="tel" name="phoneNumber" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
         data-msg="Please enter a valid phone number"
         data-error-class="u-has-error"
         data-success-class="u-has-success">
@@ -691,7 +695,7 @@
       </label>
 
       <div class="form-group">
-        <input type="text" class="form-control" name="language"  placeholder="Enter your spoken language" aria-label="Enter your spoken language" required aria-describedby="languageLabel"
+        <input type="text" id="lang" name="lang" class="form-control" name="language"  placeholder="Enter your spoken language" aria-label="Enter your spoken language" required aria-describedby="languageLabel"
         data-msg="Please enter your spoken language"
         data-error-class="u-has-error"
         data-success-class="u-has-success">
@@ -702,7 +706,7 @@
 </div>
 
 <div class="text-center">
-  <button type="submit" class="btn btn-primary btn-wide transition-3d-hover mb-4">Submit</button>
+  <button id="submitBtn" type="submit" class="btn btn-primary btn-wide transition-3d-hover mb-4">Submit</button>
   <p class="small">An agent will contact you about next steps within 24 hours.</p>
 </div>
 
@@ -791,6 +795,9 @@ data-hide-effect="slideOutDown">
 <script src="../../assets/js/components/hs.scroll-nav.js"></script>
 <script src="../../assets/js/components/hs.svg-injector.js"></script>
 <script src="../../assets/js/components/hs.go-to.js"></script>
+
+<!-- Page JS -->
+<script src="../../assets/js/results.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
