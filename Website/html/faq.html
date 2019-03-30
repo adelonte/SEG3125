@@ -23,8 +23,11 @@
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
   
-  <!-- CSS for page -->
-  <link rel="stylesheet" href="../../assets/css/universities.css">
+  <!-- CSS for icon -->
+  <link rel="stylesheet" href="../../assets/css/header-icon.css">
+  
+  <!-- CSS for icon -->
+  <link rel="stylesheet" href="../../assets/css/faq.css">
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -64,38 +67,14 @@
       <!-- End Language -->
 
       <div class="ml-auto">
-        <!-- Jump To -->
-        <div class="d-inline-block d-sm-none position-relative mr-2">
-          <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-          aria-controls="jumpToDropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-          data-unfold-event="hover"
-          data-unfold-target="#jumpToDropdown"
-          data-unfold-type="css-animation"
-          data-unfold-duration="300"
-          data-unfold-delay="300"
-          data-unfold-hide-on-scroll="true"
-          data-unfold-animation-in="slideInUp"
-          data-unfold-animation-out="fadeOut">
-          Jump to
-        </a>
-
-        <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-
-          <a class="dropdown-item" href="../../html/pages/contacts-agency.html">Contact Us</a>
-        </div>
-      </div>
-      <!-- End Jump To -->
-
       <!-- Links -->
       <div class="d-none d-sm-inline-block ml-sm-auto">
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-0">
-            <a class="u-header__navbar-link" href="../pages/contacts-agency.html">About</a>
+            <a class="u-header__navbar-link" href="./faq.html">About</a>
           </li>
           <li class="list-inline-item mr-0">
-            <a class="u-header__navbar-link" href="../pages/contacts-agency.html">Contact Us</a>
+            <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -110,7 +89,7 @@
   <!-- Nav -->
   <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
     <!-- Logo -->
-    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="./index.html" aria-label="Front">
       <div class="col-md-6 col-xs-6">
         <img src="../../design/logo/Logo.png"  class="img-fluid header-icon" alt="img-responsive"></img>
       </div>
@@ -186,23 +165,24 @@
           <!-- End Title -->
 
           <!-- Input -->
-          <form class="input-group input-group-lg input-group-borderless mb-5">
+          <form class="input-group input-group-lg input-group-borderless">
             <div class="input-group-prepend">
               <span class="input-group-text" id="askQuestions">
                 <span class="fas fa-search"></span>
               </span>
             </div>
-            <input type="search" class="form-control" placeholder="Ask a question" aria-label="Ask a question" aria-describedby="askQuestions">
+            <input id="search" type="search" class="form-control" placeholder="Ask a question" aria-label="Ask a question" aria-describedby="askQuestions">
           </form>
           <!-- End Input -->
+		  <div id="results" class="mb-5 card text-left d-none"></div>
 
           <!-- Text/Links -->
           <p class="text-white-70">
             Popular help topics:
-            <a class="link-light" href="#">cost,</a>
-            <a class="link-light ml-1" href="#">admission,</a>
-            <a class="link-light ml-1" href="#">visa,</a>
-            <a class="link-light ml-1" href="#">transfer credits</a>
+            <a class="link-light" href="#agents_q2">cost,</a>
+            <a class="link-light ml-1" href="#apps_q3">admission,</a>
+            <a class="link-light ml-1" href="#apps_q5">visa,</a>
+            <a class="link-light ml-1" href="#others_q4">transfer credits</a>
           </p>
           <!-- End Text/Links -->
         </div>
@@ -253,13 +233,13 @@
         <!-- Apps Accordion -->
         <div id="appsAccordion">
           <!-- Card -->
-          <div class="card mb-3">
+          <div class="card mb-3 faq-q">
             <div class="card-header card-collapse" id="appsHeadingOne">
               <h5 class="mb-0">
-                <button class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                <button id="apps_q1" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3 collapsed"
                 data-toggle="collapse"
                 data-target="#appsCollapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="appsCollapseOne">
                 How far in advance should I start the application process?
 
@@ -269,7 +249,7 @@
               </button>
             </h5>
           </div>
-          <div id="appsCollapseOne" class="collapse show"
+          <div id="appsCollapseOne" class="collapse"
           aria-labelledby="appsHeadingOne"
           data-parent="#appsAccordion">
           <div class="card-body">
@@ -280,10 +260,10 @@
       <!-- End Card -->
 
       <!-- Card -->
-      <div class="card mb-3">
+      <div class="card mb-3 faq-q">
         <div class="card-header card-collapse" id="appsHeadingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+            <button id="apps_q2" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
             data-toggle="collapse"
             data-target="#appsCollapseTwo"
             aria-expanded="false"
@@ -307,10 +287,10 @@
   <!-- End Card -->
 
   <!-- Card -->
-  <div class="card mb-3">
+  <div class="card mb-3 faq-q">
     <div class="card-header card-collapse" id="appsHeadingThree">
       <h5 class="mb-0">
-        <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+        <button id="apps_q3" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
         data-toggle="collapse"
         data-target="#appsCollapseThree"
         aria-expanded="false"
@@ -334,15 +314,15 @@
 <!-- End Card -->
 
 <!-- Card -->
-<div class="card mb-3">
+<div class="card mb-3 faq-q">
   <div class="card-header card-collapse" id="appsHeadingFour">
     <h5 class="mb-0">
-      <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      <button id="apps_q4" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
       data-toggle="collapse"
       data-target="#appsCollapseFour"
       aria-expanded="false"
       aria-controls="appsCollapseFour">
-      I have another question about applications?
+      I have another question about applications.
 
       <span class="card-btn-arrow">
         <span class="fas fa-arrow-down small"></span>
@@ -352,6 +332,32 @@
 </div>
 <div id="appsCollapseFour" class="collapse"
 aria-labelledby="appsHeadingFour"
+data-parent="#appsAccordion">
+<div class="card-body">
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+</div>
+<!-- End Card -->
+<!-- Card -->
+<div class="card mb-3 faq-q">
+  <div class="card-header card-collapse" id="appsHeadingFive">
+    <h5 class="mb-0">
+      <button id="apps_q5" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      data-toggle="collapse"
+      data-target="#appsCollapseFive"
+      aria-expanded="false"
+      aria-controls="appsCollapseFive">
+      Will I need a visa?
+
+      <span class="card-btn-arrow">
+        <span class="fas fa-arrow-down small"></span>
+      </span>
+    </button>
+  </h5>
+</div>
+<div id="appsCollapseFive" class="collapse"
+aria-labelledby="appsHeadingFive"
 data-parent="#appsAccordion">
 <div class="card-body">
   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
@@ -375,10 +381,10 @@ data-parent="#appsAccordion">
   <!-- Agents Accordion -->
   <div id="agentsAccordion">
     <!-- Card -->
-    <div class="card mb-3">
+    <div class="card mb-3 faq-q">
       <div class="card-header card-collapse" id="agentsHeadingOne">
         <h5 class="mb-0">
-          <button class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+          <button id="agents_q1" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3 collapsed"
           data-toggle="collapse"
           data-target="#agentsCollapseOne"
           aria-expanded="false"
@@ -391,7 +397,7 @@ data-parent="#appsAccordion">
         </button>
       </h5>
     </div>
-    <div id="agentsCollapseOne" class="collapse show"
+    <div id="agentsCollapseOne" class="collapse"
     aria-labelledby="agentsHeadingOne"
     data-parent="#agentsAccordion">
     <div class="card-body">
@@ -402,10 +408,10 @@ data-parent="#appsAccordion">
 <!-- End Card -->
 
 <!-- Card -->
-<div class="card mb-3">
+<div class="card mb-3 faq-q">
   <div class="card-header card-collapse" id="agentsHeadingTwo">
     <h5 class="mb-0">
-      <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      <button id="agents_q2" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
       data-toggle="collapse"
       data-target="#agentsCollapseTwo"
       aria-expanded="false"
@@ -429,15 +435,15 @@ data-parent="#agentsAccordion">
 <!-- End Card -->
 
 <!-- Card -->
-<div class="card mb-3">
+<div class="card mb-3 faq-q">
   <div class="card-header card-collapse" id="agentsHeadingThree">
     <h5 class="mb-0">
-      <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      <button id="agents_q3" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
       data-toggle="collapse"
       data-target="#agentsCollapseThree"
       aria-expanded="false"
       aria-controls="agentsCollapseThree">
-      Why erbvruivufeicferf?
+      Why our organization?
 
       <span class="card-btn-arrow">
         <span class="fas fa-arrow-down small"></span>
@@ -470,10 +476,10 @@ data-parent="#agentsAccordion">
   <!-- Other Accordion -->
   <div id="otherAccordion">
     <!-- Card -->
-    <div class="card mb-3">
+    <div class="card mb-3 faq-q">
       <div class="card-header card-collapse" id="otherHeadingOne">
         <h5 class="mb-0">
-          <button class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+          <button id="others_q1" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
           data-toggle="collapse"
           data-target="#otherCollapseOne"
           aria-expanded="false"
@@ -486,7 +492,7 @@ data-parent="#agentsAccordion">
         </button>
       </h5>
     </div>
-    <div id="otherCollapseOne" class="collapse show"
+    <div id="otherCollapseOne" class="collapse"
     aria-labelledby="otherHeadingOne"
     data-parent="#otherAccordion">
     <div class="card-body">
@@ -497,10 +503,10 @@ data-parent="#agentsAccordion">
 <!-- End Card -->
 
 <!-- Card -->
-<div class="card mb-3">
+<div class="card mb-3 faq-q">
   <div class="card-header card-collapse" id="otherHeadingTwo">
     <h5 class="mb-0">
-      <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      <button id="others_q2" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
       data-toggle="collapse"
       data-target="#otherCollapseTwo"
       aria-expanded="false"
@@ -524,10 +530,10 @@ data-parent="#otherAccordion">
 <!-- End Card -->
 
 <!-- Card -->
-<div class="card mb-3">
+<div class="card mb-3 faq-q">
   <div class="card-header card-collapse" id="otherHeadingThree">
     <h5 class="mb-0">
-      <button class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      <button id="others_q3" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
       data-toggle="collapse"
       data-target="#otherCollapseThree"
       aria-expanded="false"
@@ -543,6 +549,32 @@ data-parent="#otherAccordion">
 <div id="otherCollapseThree" class="collapse"
 aria-labelledby="otherHeadingThree"
 data-parent="#otherAccordion">
+<div class="card-body">
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+</div>
+<!-- End Card -->
+<!-- Card -->
+<div class="card mb-3 faq-q">
+  <div class="card-header card-collapse" id="appsHeadingFour">
+    <h5 class="mb-0">
+      <button id="others_q4" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+      data-toggle="collapse"
+      data-target="#appsCollapseFour"
+      aria-expanded="false"
+      aria-controls="appsCollapseFour">
+      Will my credits transfer over?
+
+      <span class="card-btn-arrow">
+        <span class="fas fa-arrow-down small"></span>
+      </span>
+    </button>
+  </h5>
+</div>
+<div id="appsCollapseFour" class="collapse"
+aria-labelledby="appsHeadingFour"
+data-parent="#appsAccordion">
 <div class="card-body">
   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 </div>
@@ -670,6 +702,9 @@ data-hide-effect="slideOutDown">
 <script src="../../assets/js/components/hs.scroll-nav.js"></script>
 <script src="../../assets/js/components/hs.svg-injector.js"></script>
 <script src="../../assets/js/components/hs.go-to.js"></script>
+
+<!-- Page JS -->
+<script src="../assets/js/faq.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
