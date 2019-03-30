@@ -181,7 +181,7 @@
    <div class="col-sm-4">
 
      <!-- Title -->
-      <h1 class="display-4 font-size-md-down-5 text-black mb-0">Search a <span class="font-weight-semi-bold">University</span></h1>
+      <h1 class="display-4 font-size-md-down-5 text-black mb-0">Search for a <span class="font-weight-semi-bold">University</span></h1>
     <!-- End Title -->
     <!-- Input -->
     <form class="input-group input-group-lg input-group-borderless mb-5">
@@ -190,34 +190,33 @@
           <span class="fas fa-search"></span>
         </span>
       </div>
-      <input type="search" class="form-control" id="searchUni" onkeyup = "searchFunc()" placeholder="Search a University" aria-label="Search a University" aria-describedby="searchUni">
+      <input type="search" class="form-control" id="searchUni" onkeyup = "searchFunc()" placeholder="Search for a University" aria-label="Search for a University" aria-describedby="searchUni">
     </form>
 
     <div class="list-group list-group-flush"  id="myUL" style="height: 500px;overflow-y: scroll;">
-      <a href="#" class="list-group-item list-group-item-action">
-        University of Ottawa
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">McGill University</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Toronto</a>
-      <a href="#" class="list-group-item list-group-item-action">Carelton University</a>
-      <a href="#" class="list-group-item list-group-item-action">University of British Columbia</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Alberta</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Waterloo</a>
-      <a href="#" class="list-group-item list-group-item-action">York University</a>
-      <a href="#" class="list-group-item list-group-item-action">Ryerson University</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Guelph</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Calgary</a>
-      <a href="#" class="list-group-item list-group-item-action">McMaster University</a>
-      <a href="#" class="list-group-item list-group-item-action">Laval University</a>
-      <a href="#" class="list-group-item list-group-item-action">Concordi University</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Victoria</a>
-      <a href="#" class="list-group-item list-group-item-action">Brock University</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Manitoba</a>
-      <a href="#" class="list-group-item list-group-item-action">University of Saskatchewan</a>
+      <a href="#" class="list-group-item list-group-item-action" id="uottawa">University of Ottawa</a>
+      <a href="#" class="list-group-item list-group-item-action" id="mcgill">McGill University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="uoft">University of Toronto</a>
+      <a href="#" class="list-group-item list-group-item-action" id="carleton">Carleton University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="ubc">University of British Columbia</a>
+      <a href="#" class="list-group-item list-group-item-action" id="ualberta">University of Alberta</a>
+      <a href="#" class="list-group-item list-group-item-action" id="uwaterloo">University of Waterloo</a>
+      <a href="#" class="list-group-item list-group-item-action" id="york">York University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="ryerson">Ryerson University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="uoguelph">University of Guelph</a>
+      <a href="#" class="list-group-item list-group-item-action" id="ucalgary">University of Calgary</a>
+      <a href="#" class="list-group-item list-group-item-action" id="mcmaster">McMaster University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="laval">Laval University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="concordia">Concordia University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="uvic">University of Victoria</a>
+      <a href="#" class="list-group-item list-group-item-action" id="brock">Brock University</a>
+      <a href="#" class="list-group-item list-group-item-action" id="umanitoba">University of Manitoba</a>
+      <a href="#" class="list-group-item list-group-item-action" id="usask">University of Saskatchewan</a>
     </div>
+	<small>All descriptions are taken from Wikipedia.</small>
   </div>
 	<div class="col-sm-8" >
-		<div id="map"></div> 
+		<div id="map"></div>
 	</div>
 </div>
 
@@ -304,24 +303,6 @@ data-hide-effect="slideOutDown">
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap"></script>
 
 <!-- JS Plugins Init. -->
-<script>
-  function searchFunc() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("searchUni");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
-</script>
 <script>
   $(window).on('load', function () {
       // initialization of HSMegaMenu component
