@@ -1,337 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Title -->
-  <title>Map Search</title>
-
-  <!-- Required Meta Tags Always Come First -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
-
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-  <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../../assets/css/theme.css">
-  
-  <!-- CSS for icon -->
-  <link rel="stylesheet" href="../../assets/css/header-icon.css">
-  
-  <!-- CSS for page -->
-  <link rel="stylesheet" href="../../assets/css/universities.css">
-</head>
-<body>
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
-  data-header-fix-moment="500"
-  data-header-fix-effect="slide">
-
-  <div class="u-header__section">
-    <!-- Topbar -->
-    <div class="container u-header__hide-content pt-2">
-      <div class="d-flex align-items-center">
-        <!-- Language -->
-        <div class="position-relative">
-          <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-          aria-controls="languageDropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-          data-unfold-event="hover"
-          data-unfold-target="#languageDropdown"
-          data-unfold-type="css-animation"
-          data-unfold-duration="300"
-          data-unfold-delay="300"
-          data-unfold-hide-on-scroll="true"
-          data-unfold-animation-in="slideInUp"
-          data-unfold-animation-out="fadeOut">
-          <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/ca.svg" alt="SVG">
-          <span class="d-inline-block d-sm-none">CA</span>
-          <span class="d-none d-sm-inline-block">Canada</span>
-        </a>
-
-        <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-          <a class="dropdown-item active" href="#">English</a>
-          <a class="dropdown-item" href="#">French</a>
-
+  <head>
+    <!-- Title -->
+    <title>Map Search</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+    <!-- CSS for icon -->
+    <link rel="stylesheet" href="../../assets/css/header-icon.css">
+    <!-- CSS for page -->
+    <link rel="stylesheet" href="../../assets/css/universities.css">
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+      data-header-fix-moment="500"
+      data-header-fix-effect="slide">
+      <div class="u-header__section">
+        <!-- Topbar -->
+        <div class="container u-header__hide-content pt-2">
+          <div class="d-flex align-items-center">
+            <!-- Language -->
+            <div class="position-relative">
+              <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+                aria-controls="languageDropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-unfold-event="hover"
+                data-unfold-target="#languageDropdown"
+                data-unfold-type="css-animation"
+                data-unfold-duration="300"
+                data-unfold-delay="300"
+                data-unfold-hide-on-scroll="true"
+                data-unfold-animation-in="slideInUp"
+                data-unfold-animation-out="fadeOut">
+              <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/ca.svg" alt="SVG">
+              <span class="d-inline-block d-sm-none">CA</span>
+              <span class="d-none d-sm-inline-block">Canada</span>
+              </a>
+              <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
+                <a class="dropdown-item active" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
+              </div>
+            </div>
+            <!-- End Language -->
+            <!-- Links -->
+            <div class="d-none d-sm-inline-block ml-sm-auto">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item mr-0">
+                  <a class="u-header__navbar-link" href="./faq.html">About</a>
+                </li>
+                <li class="list-inline-item mr-0">
+                  <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Links -->
+          </div>
         </div>
       </div>
-      <!-- End Language -->
-
-      <!-- Links -->
-      <div class="d-none d-sm-inline-block ml-sm-auto">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item mr-0">
-            <a class="u-header__navbar-link" href="./faq.html">About</a>
-          </li>
-          <li class="list-inline-item mr-0">
-            <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
-          </li>
-        </ul>
+      <!-- End Topbar -->
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+            <div class="col-md-6 col-xs-6">
+              <img src="../../design/logo/Logo.png"  class="img-fluid header-icon" alt="img-responsive">
+            </div>
+            <span class="u-header__navbar-brand-text"></span>
+          </a>
+          <!-- End Logo -->
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navBar"
+            data-toggle="collapse"
+            data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+          <span class="u-hamburger__inner"></span>
+          </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+              <!-- Home -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item">
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+              </li>
+              <!-- End Home -->
+              <!-- Pages -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                data-event="hover"
+                data-animation-in="slideInUp"
+                data-animation-out="fadeOut">
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="./universities.html" aria-haspopup="true" aria-expanded="false">Universities</a>
+              </li>
+              <!-- End Pages -->
+              <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="./form.html" target="_blank">
+                Start Now
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
       </div>
-      <!-- End Links -->
-    </div>
-
-  </div>
-</div>
-<!-- End Topbar -->
-
-<div id="logoAndNav" class="container">
-  <!-- Nav -->
-  <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
-    <!-- Logo -->
-    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
-      <div class="col-md-6 col-xs-6">
-        <img src="../../design/logo/Logo.png"  class="img-fluid header-icon" alt="img-responsive"></img>
+    </header>
+    <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main">
+      <div class="container space-2 space-top-md-4 space-top-lg-3">
+        <div class="row">
+          <div class="col-sm-4">
+            <!-- Title -->
+            <h1 class="display-4 font-size-md-down-5 text-black mb-0">Search for a <span class="font-weight-semi-bold">University</span></h1>
+            <!-- End Title -->
+            <!-- Input -->
+            <form class="input-group input-group-lg input-group-borderless mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input type="search" class="form-control" id="searchUni" placeholder="Search for a University" aria-label="Search for a University" aria-describedby="searchUni">
+            </form>
+            <div class="list-group list-group-flush" id="myUL" style="height: 500px;overflow-y: scroll;">
+              <a href="#" class="list-group-item list-group-item-action" id="uottawa">University of Ottawa</a>
+              <a href="#" class="list-group-item list-group-item-action" id="mcgill">McGill University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uoft">University of Toronto</a>
+              <a href="#" class="list-group-item list-group-item-action" id="carleton">Carleton University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ubc">University of British Columbia</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ualberta">University of Alberta</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uwaterloo">University of Waterloo</a>
+              <a href="#" class="list-group-item list-group-item-action" id="york">York University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ryerson">Ryerson University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uoguelph">University of Guelph</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ucalgary">University of Calgary</a>
+              <a href="#" class="list-group-item list-group-item-action" id="mcmaster">McMaster University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="laval">Laval University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="concordia">Concordia University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uvic">University of Victoria</a>
+              <a href="#" class="list-group-item list-group-item-action" id="brock">Brock University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="umanitoba">University of Manitoba</a>
+              <a href="#" class="list-group-item list-group-item-action" id="usask">University of Saskatchewan</a>
+            </div>
+            <small>All descriptions are taken from Wikipedia.</small>
+          </div>
+          <div class="col-sm-8" >
+            <div id="map"></div>
+          </div>
+        </div>
       </div>
-      <span class="u-header__navbar-brand-text"></span>
+    </main>
+    <!-- ========== END MAIN ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <!-- Lists -->
+      <div class="border-bottom">
+        <div class="container space-2">
+          <div class="row justify-content-md-between">
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+              <h4 class="h6 font-weight-semi-bold">About</h4>
+              <!-- List Group -->
+              <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a class="list-group-item list-group-item-action" href="./faq.html">About</a></li>
+                <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
+              </ul>
+              <!-- End List Group -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Lists -->
+      <!-- Copyright -->
+      <div class="container text-center space-1">
+        <!-- Logo -->
+        <!-- End Logo -->
+        <p class="small text-muted">&copy; Internation Admissions. 2018. All rights reserved.</p>
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+    <!-- Go to Top -->
+    <a class="js-go-to u-go-to" href="#"
+      data-position='{"bottom": 15, "right": 15 }'
+      data-type="fixed"
+      data-offset-top="400"
+      data-compensation="#header"
+      data-show-effect="slideInUp"
+      data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
     </a>
-    <!-- End Logo -->
-
-    <!-- Responsive Toggle Button -->
-    <button type="button" class="navbar-toggler btn u-hamburger"
-    aria-label="Toggle navigation"
-    aria-expanded="false"
-    aria-controls="navBar"
-    data-toggle="collapse"
-    data-target="#navBar">
-    <span id="hamburgerTrigger" class="u-hamburger__box">
-      <span class="u-hamburger__inner"></span>
-    </span>
-  </button>
-  <!-- End Responsive Toggle Button -->
-
-  <!-- Navigation -->
-  <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
-    <ul class="navbar-nav u-header__navbar-nav">
-      <!-- Home -->
-      <li class="nav-item hs-has-mega-menu u-header__nav-item">
-        <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">Home</a>
-      </li>
-      <!-- End Home -->
-
-      <!-- Pages -->
-      <li class="nav-item hs-has-sub-menu u-header__nav-item"
-      data-event="hover"
-      data-animation-in="slideInUp"
-      data-animation-out="fadeOut">
-      <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="./universities.html" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Universities</a>
-
-
-    </li>
-    <!-- End Pages -->
-
-    <!-- Button -->
-    <li class="nav-item u-header__nav-last-item">
-      <a class="btn btn-sm btn-primary transition-3d-hover" href="./form.html" target="_blank">
-        Start Now
-      </a>
-    </li>
-    <!-- End Button -->
-  </ul>
-</div>
-<!-- End Navigation -->
-</nav>
-<!-- End Nav -->
-</div>
-</div>
-</header>
-<!-- ========== END HEADER ========== -->
-
-<!-- ========== MAIN ========== -->
-<main id="content" role="main">
- <div class="container space-2 space-top-md-4 space-top-lg-3">
-  <div class="row">
-   <div class="col-sm-4">
-
-     <!-- Title -->
-      <h1 class="display-4 font-size-md-down-5 text-black mb-0">Search for a <span class="font-weight-semi-bold">University</span></h1>
-    <!-- End Title -->
-    <!-- Input -->
-    <form class="input-group input-group-lg input-group-borderless mb-5">
-      <div class="input-group-prepend">
-        <span class="input-group-text">
-          <span class="fas fa-search"></span>
-        </span>
-      </div>
-      <input type="search" class="form-control" id="searchUni" placeholder="Search for a University" aria-label="Search for a University" aria-describedby="searchUni">
-    </form>
-
-    <div class="list-group list-group-flush" id="myUL" style="height: 500px;overflow-y: scroll;">
-      <a href="#" class="list-group-item list-group-item-action" id="uottawa">University of Ottawa</a>
-      <a href="#" class="list-group-item list-group-item-action" id="mcgill">McGill University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="uoft">University of Toronto</a>
-      <a href="#" class="list-group-item list-group-item-action" id="carleton">Carleton University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="ubc">University of British Columbia</a>
-      <a href="#" class="list-group-item list-group-item-action" id="ualberta">University of Alberta</a>
-      <a href="#" class="list-group-item list-group-item-action" id="uwaterloo">University of Waterloo</a>
-      <a href="#" class="list-group-item list-group-item-action" id="york">York University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="ryerson">Ryerson University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="uoguelph">University of Guelph</a>
-      <a href="#" class="list-group-item list-group-item-action" id="ucalgary">University of Calgary</a>
-      <a href="#" class="list-group-item list-group-item-action" id="mcmaster">McMaster University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="laval">Laval University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="concordia">Concordia University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="uvic">University of Victoria</a>
-      <a href="#" class="list-group-item list-group-item-action" id="brock">Brock University</a>
-      <a href="#" class="list-group-item list-group-item-action" id="umanitoba">University of Manitoba</a>
-      <a href="#" class="list-group-item list-group-item-action" id="usask">University of Saskatchewan</a>
-    </div>
-	<small>All descriptions are taken from Wikipedia.</small>
-  </div>
-	<div class="col-sm-8" >
-		<div id="map"></div>
-	</div>
-</div>
-
-
-
-
-</main>
-<!-- ========== END MAIN ========== -->
-
-<!-- ========== FOOTER ========== -->
-<footer>
-  <!-- Lists -->
-  <div class="border-bottom">
-    <div class="container space-2">
-      <div class="row justify-content-md-between">
-
-        <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-          <h4 class="h6 font-weight-semi-bold">About</h4>
-
-          <!-- List Group -->
-          <ul class="list-group list-group-flush list-group-borderless mb-0">
-            <li><a class="list-group-item list-group-item-action" href="./faq.html">About</a></li>
-            <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-
-          </ul>
-          <!-- End List Group -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Lists -->
-
-<!-- Copyright -->
-<div class="container text-center space-1">
-  <!-- Logo -->
-
-  <!-- End Logo -->
-  <p class="small text-muted">&copy; Internation Admissions. 2018. All rights reserved.</p>
-</div>
-<!-- End Copyright -->
-</footer>
-<!-- ========== END FOOTER ========== -->
-
-<!-- Go to Top -->
-<a class="js-go-to u-go-to" href="#"
-data-position='{"bottom": 15, "right": 15 }'
-data-type="fixed"
-data-offset-top="400"
-data-compensation="#header"
-data-show-effect="slideInUp"
-data-hide-effect="slideOutDown">
-<span class="fas fa-arrow-up u-go-to__inner"></span>
-</a>
-<!-- End Go to Top -->
-
-<!-- JS Global Compulsory -->
-<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
-
-<!-- JS Implementing Plugins -->
-<script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-
-<!-- JS Front -->
-<script src="../../assets/js/hs.core.js"></script>
-<script src="../../assets/js/components/hs.header.js"></script>
-<script src="../../assets/js/components/hs.unfold.js"></script>
-<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
-<script src="../../assets/js/components/hs.validation.js"></script>
-<script src="../../assets/js/components/hs.focus-state.js"></script>
-<script src="../../assets/js/components/hs.show-animation.js"></script>
-<script src="../../assets/js/components/hs.sticky-block.js"></script>
-<script src="../../assets/js/components/hs.scroll-nav.js"></script>
-<script src="../../assets/js/components/hs.svg-injector.js"></script>
-<script src="../../assets/js/components/hs.go-to.js"></script>
-
-<!-- Google Map Integration JS -->
-<script src="../../assets/js/universities.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap"></script>
-
-<!-- JS Plugins Init. -->
-<script>
-  $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
-      });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-
-      // initialization of HSScrollNav component
-      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
-        duration: 700
-      });
-    });
-
-  $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
-
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
-
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
-      });
-
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
-
-      // initialization of sticky blocks
-      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
-  </script>
-</body>
+    <!-- End Go to Top -->
+    <!-- JS Global Compulsory -->
+    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- JS Front -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/components/hs.unfold.js"></script>
+    <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="../../assets/js/components/hs.validation.js"></script>
+    <script src="../../assets/js/components/hs.focus-state.js"></script>
+    <script src="../../assets/js/components/hs.show-animation.js"></script>
+    <script src="../../assets/js/components/hs.sticky-block.js"></script>
+    <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+    <script src="../../assets/js/components/hs.svg-injector.js"></script>
+    <script src="../../assets/js/components/hs.go-to.js"></script>
+    <!-- Google Map Integration JS -->
+    <script src="../../assets/js/universities.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+            event: 'hover',
+            pageContainer: $('.container'),
+            breakpoint: 767.98,
+            hideTimeOut: 0
+          });
+      
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+      
+          // initialization of HSScrollNav component
+          $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+            duration: 700
+          });
+        });
+      
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
+      
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+            afterOpen: function () {
+              $(this).find('input[type="search"]').focus();
+            }
+          });
+      
+          // initialization of malihu scrollbar
+          $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+          // initialization of show animations
+          $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+      
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate', {
+            rules: {
+              confirmPassword: {
+                equalTo: '#signupPassword'
+              }
+            }
+          });
+      
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
+      
+          // initialization of sticky blocks
+          $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+      
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+    </script>
+  </body>
 </html>
