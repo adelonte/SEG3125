@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
+
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="../../assets/css/theme.css">
 	<!-- CSS for icon -->
@@ -58,14 +57,35 @@
             </div>
             <!-- End Language -->
             <div class="ml-auto">
+              <!-- Jump To -->
+              <div class="d-inline-block d-sm-none position-relative mr-2">
+                <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+                  aria-controls="jumpToDropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-unfold-event="hover"
+                  data-unfold-target="#jumpToDropdown"
+                  data-unfold-type="css-animation"
+                  data-unfold-duration="300"
+                  data-unfold-delay="300"
+                  data-unfold-hide-on-scroll="true"
+                  data-unfold-animation-in="slideInUp"
+                  data-unfold-animation-out="fadeOut">
+                Jump to
+                </a>
+                <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
+                  <a class="dropdown-item" href="../../html/pages/contacts-agency.html">Contact Us</a>
+                </div>
+              </div>
+              <!-- End Jump To -->
               <!-- Links -->
               <div class="d-none d-sm-inline-block ml-sm-auto">
                 <ul class="list-inline mb-0">
                   <li class="list-inline-item mr-0">
-                    <a class="u-header__navbar-link" href="./faq.html">About</a>
+                    <a class="u-header__navbar-link" href="../pages/contacts-agency.html">About</a>
                   </li>
                   <li class="list-inline-item mr-0">
-                    <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
+                    <a class="u-header__navbar-link" href="../pages/contacts-agency.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -78,7 +98,7 @@
           <!-- Nav -->
           <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
             <!-- Logo -->
-            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="./index.html" aria-label="Front">
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
               <div class="col-md-6 col-xs-6">
                 <img src="../../design/logo/Logo.png"  class="img-fluid header-icon" alt="img-responsive">
               </div>
@@ -102,7 +122,7 @@
               <ul class="navbar-nav u-header__navbar-nav">
                 <!-- Home -->
                 <li class="nav-item hs-has-mega-menu u-header__nav-item">
-                  <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+                  <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="index.html" aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <!-- End Home -->
                 <!-- Pages -->
@@ -110,12 +130,12 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                  <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="./universities.html" aria-haspopup="true" aria-expanded="false">Universities</a>
+                  <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="javascript:;" aria-haspopup="true" aria-expanded="false">Universities</a>
                 </li>
                 <!-- End Pages -->
                 <!-- Button -->
                 <li class="nav-item u-header__nav-last-item">
-                  <a class="btn btn-sm btn-primary transition-3d-hover" href="./form.html" target="_blank">
+                  <a class="btn btn-sm btn-primary transition-3d-hover" href="../../html/form/form.html" target="_blank">
                   Start Now
                   </a>
                 </li>
@@ -132,14 +152,14 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
       <!-- Hero Section -->
-      <div class="d-lg-flex position-relative">
+      <div class="d-lg-flex position-relative gradient-half-primary-v3">
         <div class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0 min-height-lg-100vh">
           <!-- Content -->
           <div class="row w-100">
             <div class="col-lg-5">
               <h1 class="display-4 font-size-md-down-5 mb-3">International Admissions</h1>
               <p>
-                Our agents will help you
+                Our mission is to help you
                 <span class="text-primary">
                 <strong class="u-text-animation u-text-animation--typing"></strong>
                 </span>
@@ -158,11 +178,111 @@
               <img class="js-svg-injector" src="../../assets/svg/illustrations/knowledgebase-community.svg" alt="Image Description"
                 data-parent="#SVGknowledgebasecommunity">
             </figure>
+
           </div>
+          <figure class="position-absolute right-0 bottom-0 left-0">
+            <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description"
+                 data-parent="#SVGheroSectionBg">
+          </figure>
           <!-- End SVG Background -->
         </div>
       </div>
+
       <!-- End Hero Section -->
+
+      <!-- Platform instructions -->
+      <div class="container space-2 space-bottom-md-3">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+          <span class="btn btn-xs btn-soft-success btn-pill mb-2">Front</span>
+          <h2 class="text-primary font-weight-normal">Who is <span class="font-weight-semi-bold">Front</span> for?</h2>
+          <p>All agencies. All startups. All fields of businesses. All countries.</p>
+        </div>
+        <!-- End Title -->
+
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+            <!-- Info -->
+            <div class="pl-lg-7">
+              <div class="mb-4">
+                <h3 class="h5">Professional design</h3>
+                <p>Easy and fast adjustments of elements are possible with Front template. Find our more about our all-in-one programmatic template.</p>
+              </div>
+
+              <!-- Link -->
+              <a class="card border-0 shadow-sm" href="#">
+                <div class="card-body p-4">
+                  <div class="media align-items-center">
+                    <div class="u-avatar mr-3">
+                      <img class="img-fluid rounded-circle" src="../../assets/img/icons/img2.png" alt="Image Description">
+                    </div>
+                    <span class="media-body">
+                      <span class="d-flex justify-content-between align-items-center font-weight-semi-bold">
+                        Get Started with Front <span class="fas fa-angle-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Link -->
+            </div>
+            <!-- End Info -->
+          </div>
+
+          <div id="SVGchattingGirl" class="col-lg-7 order-lg-1 svg-preloader">
+            <!-- SVG Icon -->
+            <figure class="ie-chatting-girl">
+              <img class="js-svg-injector" src="../../assets/svg/illustrations/chatting-girl.svg" alt="Image Description"
+                   data-parent="#SVGchattingGirl">
+            </figure>
+            <!-- End SVG Icon -->
+          </div>
+        </div>
+      </div>
+      <!-- End Platform Instructions 1-->
+      <!-- Instruction 2 -->
+      <div class="container space-2 space-md-3">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 mb-7 mb-lg-0">
+            <!-- Info -->
+            <div class="pr-lg-7">
+              <div class="mb-4">
+                <h3 class="h5">Front process</h3>
+                <p>Once you are invited to Front Agency, you company will be set within days. We help to take of all the paperwork.</p>
+              </div>
+
+              <!-- Link -->
+              <a class="card border-0 shadow-sm" href="#">
+                <div class="card-body p-4">
+                  <div class="media align-items-center">
+                    <div class="u-avatar mr-3">
+                      <img class="img-fluid rounded-circle" src="../../assets/img/icons/img1.png" alt="Image Description">
+                    </div>
+                    <span class="media-body">
+                      <span class="d-flex justify-content-between align-items-center font-weight-semi-bold">
+                        Get Started with Front <span class="fas fa-angle-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <!-- End Link -->
+            </div>
+            <!-- End Info -->
+          </div>
+
+          <div id="SVGchattingBoy" class="col-lg-7 svg-preloader">
+            <!-- SVG Icon -->
+            <figure class="ie-chatting-boy">
+              <img class="js-svg-injector" src="../../assets/svg/illustrations/chatting-boy.svg" alt="Image Description"
+                   data-parent="#SVGchattingBoy">
+            </figure>
+            <!-- End SVG Icon -->
+          </div>
+        </div>
+      </div>
+
+      <!-- End Instructions 2 -->
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
     <!-- ========== FOOTER ========== -->
@@ -175,7 +295,7 @@
               <h4 class="h6 font-weight-semi-bold">About</h4>
               <!-- List Group -->
               <ul class="list-group list-group-flush list-group-borderless mb-0">
-                <li><a class="list-group-item list-group-item-action" href="./faq.html">About</a></li>
+                <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
                 <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
               </ul>
               <!-- End List Group -->
@@ -209,9 +329,6 @@
     <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
     <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
