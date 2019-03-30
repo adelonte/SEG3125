@@ -3,7 +3,7 @@ function shooAlert() {
 }
 
 function onSubmit() {
-	if($("#infoForm").valid() === false) {
+	if($("#contact-form").valid() === false) {
 		return;
 	}
 	
@@ -13,4 +13,4 @@ function onSubmit() {
 //prevent form submit
 document.getElementById("contact-form").addEventListener("submit", function(evt) { evt.preventDefault(); });
 //register click
-document.getElementById("infoForm").addEventListener("submit", onSubmit);
+document.getElementById("contact-form").addEventListener("submit", onSubmit);
