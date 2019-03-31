@@ -221,7 +221,7 @@
                     aria-labelledby="appsHeadingOne"
                     data-parent="#appsAccordion">
                     <div class="card-body">
-                      We recommend students start looking at universities and begin the application process about 1 year prior to the start of the desired school year/semester. In general, Canadian universities are split into 2 semesters: the fall semester which runs from the begining of September to the mid December and the winter semester which runs from the begining of January to mid April. The deadlines to apply for the fall semester are often the previous March, so its important to leave time to prepare a good application and think about your options before then. 
+                      We recommend students start looking at universities and begin the application process about 1 year prior to the start of the desired school year/semester. In general, Canadian universities are split into 2 semesters: the fall semester which runs from the begining of September to the mid December and the winter semester which runs from the begining of January to mid April. The deadlines to apply for the fall semester are often the previous March, so its important to leave time to prepare a good application and think about your options before then.
                     </div>
                   </div>
                 </div>
@@ -383,7 +383,7 @@
                     aria-labelledby="agentsHeadingTwo"
                     data-parent="#agentsAccordion">
                     <div class="card-body">
-                      The cost of our agents includes the cost of visa applications, and xyzzzzz. There is a only a onetime payment of $xxxxx.00  
+                      The cost of our agents includes the cost of visa applications, and xyzzzzz. There is a only a onetime payment of $xxxxx.00
                     </div>
                   </div>
                 </div>
@@ -601,6 +601,7 @@
     <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/appear.js"></script>
     <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
     <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -629,33 +630,33 @@
             breakpoint: 767.98,
             hideTimeOut: 0
           });
-      
+
           // initialization of svg injector module
           $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-      
+
           // initialization of HSScrollNav component
           $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
             duration: 700
           });
         });
-      
+
       $(document).on('ready', function () {
           // initialization of header
           $.HSCore.components.HSHeader.init($('#header'));
-      
+
           // initialization of unfold component
           $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
             afterOpen: function () {
               $(this).find('input[type="search"]').focus();
             }
           });
-      
+
           // initialization of malihu scrollbar
           $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-      
+
           // initialization of show animations
           $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-      
+
           // initialization of form validation
           $.HSCore.components.HSValidation.init('.js-validate', {
             rules: {
@@ -664,13 +665,13 @@
               }
             }
           });
-      
+
           // initialization of forms
           $.HSCore.components.HSFocusState.init();
-      
+
           // initialization of sticky blocks
           $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-      
+
           // initialization of go to
           $.HSCore.components.HSGoTo.init('.js-go-to');
         });
