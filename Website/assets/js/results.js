@@ -11,6 +11,6 @@ function onSubmit() {
 	window.setTimeout(shooAlert,2000);
 }
 //prevent form submit
-document.getElementById("contact-form").addEventListener("submit", function(evt) { evt.preventDefault(); });
+document.getElementById("infoForm").addEventListener("submit", function(evt) { evt.preventDefault(); });
 //register click
 document.getElementById("infoForm").addEventListener("submit", onSubmit);
