@@ -171,11 +171,11 @@
           </div>
         </div>
         <hr class="my-7">
-        <div class="row">
+        <div id="uni-details" class="row d-none">
 
-        <div class="container position-relative">
-          <h1 class="display-5 font-size-md-down-2 text-primary font-weight-semi-bold mb-4">University of Ottawa</h1>
-        </div>
+  <div class="container position-relative">
+    <h1 id="uni-name" class="display-5 font-size-md-down-2 text-primary font-weight-semi-bold mb-4">University of Ottawa</h1>
+  </div>
 
   <div class="container-fluid position-relative p-2 mb-3">
     <div class="row mx-gutters-1">
@@ -281,16 +281,13 @@
   <div class="container space-bottom-2">
 
 
-    <!-- Title -->
+    <!-- Address -->
     <div class="justify-content-lg-between">
       <div class="col-lg-8">
-
-        <h1 class="h3 font-weight-medium">75 Laurier Ave E, Ottawa</h1>
+        <h1 id="uni-address" class="h3 font-weight-medium">75 Laurier Ave E, Ottawa</h1>
       </div>
-
-
     </div>
-    <!-- End Title -->
+    <!-- End Address -->
 
     <div class="row space-top-2">
       <div class="col-lg-8 mb-9 mb-lg-0">
@@ -312,22 +309,22 @@
                 <ul class="list-unstyled font-size-1 mb-0">
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Type:</span>
-                    <span class="text-secondary">Public University</span>
+                    <span id="uni-type" class="text-secondary">Public University</span>
                   </li>
 
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Established</span>
-                    <span class="text-secondary">1848</span>
+                    <span id="uni-established" class="text-secondary">1848</span>
                   </li>
 
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Students</span>
-                    <span class="text-secondary">42,000</span>
+                    <span id="uni-students" class="text-secondary">42,000</span>
                   </li>
 
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Language:</span>
-                    <span class="text-secondary">English, French</span>
+                    <span id="uni-language" class="text-secondary">English, French</span>
                   </li>
                 </ul>
                 <!-- End Fact List -->
@@ -338,22 +335,17 @@
                 <ul class="list-unstyled font-size-1 mb-0">
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Nick Name:</span>
-                    <span class="text-secondary">Gee-Gees</span>
+                    <span id="uni-nickname" class="text-secondary">Gee-Gees</span>
                   </li>
 
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Sports:</span>
-                    <span class="text-secondary">U Sports, OUA</span>
+                    <span id="uni-sports" class="text-secondary">U Sports, OUA</span>
                   </li>
 
                   <li class="d-sm-flex justify-content-sm-between py-1">
                     <span class="font-weight-medium">Website:</span>
-                    <span class="text-secondary">uottawa.ca</span>
-                  </li>
-
-                  <li class="d-sm-flex justify-content-sm-between py-1">
-                    <span class="font-weight-medium"></span>
-                    <span class="text-secondary"></span>
+                    <a id="uni-website" href="" class="text-secondary" target="_blank">uottawa.ca</a>
                   </li>
                 </ul>
                 <!-- End Fact List -->
@@ -368,7 +360,7 @@
             </div>
             <!-- End Title -->
 
-            <p>The University of Ottawa is a bilingual public research university in Ottawa, Ontario, Canada. The main campus is in the residential neighbourhood of Sandy Hill, adjacent to Ottawa's Rideau Canal. The university offers a wide variety of academic programs, administered by ten faculties. It is a member of the U15, a group of research-intensive universities in Canada. The University of Ottawa is the largest English-French bilingual university in the world.</p>
+            <p id="uni-desc">The University of Ottawa is a bilingual public research university in Ottawa, Ontario, Canada. The main campus is in the residential neighbourhood of Sandy Hill, adjacent to Ottawa's Rideau Canal. The university offers a wide variety of academic programs, administered by ten faculties. It is a member of the U15, a group of research-intensive universities in Canada. The University of Ottawa is the largest English-French bilingual university in the world.</p>
 
 
 
@@ -550,6 +542,7 @@
     <script src="../../assets/js/components/hs.svg-injector.js"></script>
     <script src="../../assets/js/components/hs.go-to.js"></script>
     <!-- Google Map Integration JS -->
+    <script src="../../assets/js/universities-data.js"></script>
     <script src="../../assets/js/universities.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap"></script>
     <!-- JS Plugins Init. -->
