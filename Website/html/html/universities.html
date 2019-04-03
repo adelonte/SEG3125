@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Map Search</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+    <!-- CSS for icon -->
+    <link rel="stylesheet" href="../../assets/css/header-icon.css">
+    <!-- CSS for page -->
+    <link rel="stylesheet" href="../../assets/css/universities.css">
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+      data-header-fix-moment="500"
+      data-header-fix-effect="slide">
+      <div class="u-header__section">
+        <!-- Topbar -->
+        <div class="container u-header__hide-content pt-2">
+          <div class="d-flex align-items-center">
+            <!-- Language -->
+            <div class="position-relative">
+              <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+                aria-controls="languageDropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-unfold-event="hover"
+                data-unfold-target="#languageDropdown"
+                data-unfold-type="css-animation"
+                data-unfold-duration="300"
+                data-unfold-delay="300"
+                data-unfold-hide-on-scroll="true"
+                data-unfold-animation-in="slideInUp"
+                data-unfold-animation-out="fadeOut">
+              <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/ca.svg" alt="SVG">
+              <span class="d-inline-block d-sm-none">CA</span>
+              <span class="d-none d-sm-inline-block">Canada</span>
+              </a>
+              <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
+                <a class="dropdown-item active" href="#">English</a>
+                <a class="dropdown-item" href="#">French</a>
+              </div>
+            </div>
+            <!-- End Language -->
+            <div class="ml-auto">
+              <!-- Links -->
+              <div class="d-none d-sm-inline-block ml-sm-auto">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item mr-0">
+                    <a class="u-header__navbar-link" href="./faq.html">About</a>
+                  </li>
+                  <li class="list-inline-item mr-0">
+                    <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Links -->
+            </div>
+          </div>
+        </div>
+      <!-- End Topbar -->
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+            <div class="col-md-6 col-xs-6">
+              <img src="../../design/logo/Logo.png"  class="img-fluid header-icon" alt="img-responsive">
+            </div>
+            <span class="u-header__navbar-brand-text"></span>
+          </a>
+          <!-- End Logo -->
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navBar"
+            data-toggle="collapse"
+            data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+          <span class="u-hamburger__inner"></span>
+          </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+              <!-- Home -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item">
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+              </li>
+              <!-- End Home -->
+              <!-- Pages -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                data-event="hover"
+                data-animation-in="slideInUp"
+                data-animation-out="fadeOut">
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link " href="./universities.html" aria-haspopup="true" aria-expanded="false">Universities</a>
+              </li>
+              <!-- End Pages -->
+              <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="./form.html" target="_blank">
+                Start Now
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main">
+      <div class="container space-2 space-top-md-4 space-top-lg-3">
+        <div class="row">
+          <div class="col-sm-4">
+            <!-- Title -->
+            <h1 class="display-4 font-size-md-down-5 text-black mb-0">Search for a <span class="font-weight-semi-bold">University</span></h1>
+            <!-- End Title -->
+            <!-- Input -->
+            <form class="input-group input-group-lg input-group-borderless mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input type="search" class="form-control" id="searchUni" placeholder="Search for a University" aria-label="Search for a University" aria-describedby="searchUni">
+            </form>
+            <div class="list-group list-group-flush" id="myUL" style="height: 500px;overflow-y: scroll;">
+              <a href="#" class="list-group-item list-group-item-action" id="uottawa">University of Ottawa</a>
+              <a href="#" class="list-group-item list-group-item-action" id="mcgill">McGill University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uoft">University of Toronto</a>
+              <a href="#" class="list-group-item list-group-item-action" id="carleton">Carleton University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ubc">University of British Columbia</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ualberta">University of Alberta</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uwaterloo">University of Waterloo</a>
+              <a href="#" class="list-group-item list-group-item-action" id="york">York University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ryerson">Ryerson University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uoguelph">University of Guelph</a>
+              <a href="#" class="list-group-item list-group-item-action" id="ucalgary">University of Calgary</a>
+              <a href="#" class="list-group-item list-group-item-action" id="mcmaster">McMaster University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="laval">Laval University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="concordia">Concordia University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="uvic">University of Victoria</a>
+              <a href="#" class="list-group-item list-group-item-action" id="brock">Brock University</a>
+              <a href="#" class="list-group-item list-group-item-action" id="umanitoba">University of Manitoba</a>
+              <a href="#" class="list-group-item list-group-item-action" id="usask">University of Saskatchewan</a>
+            </div>
+            <small>All descriptions are taken from Wikipedia.</small>
+          </div>
+          <div class="col-sm-8" >
+            <div id="map"></div>
+          </div>
+        </div>
+        <hr class="my-7">
+        <div id="uni-details" class="row d-none">
+
+  <div class="container position-relative">
+    <h1 id="uni-name" class="display-5 font-size-md-down-2 text-primary font-weight-semi-bold mb-4">University of Ottawa</h1>
+  </div>
+
+  <div class="container-fluid position-relative p-2 mb-3">
+    <div class="row mx-gutters-1">
+      <div class="col-md-8 col-lg-6">
+        <!-- Gallery -->
+        <a class="js-fancybox u-media-viewer" href="javascript:;"
+           data-src="../../assets/img/1920x1080/img36.jpg"
+           data-fancybox="fancyboxGallery6"
+           data-caption="Front in frames - image #01"
+           data-speed="700"
+           data-is-infinite="true">
+          <img class="img-fluid" src="../../assets/img/900x455/img1.jpg" alt="Image Description">
+
+          <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+            <span class="d-md-none btn btn-sm btn-white">
+              <span class="fas fa-expand mr-2"></span>
+              View Photos
+            </span>
+          </div>
+        </a>
+        <!-- End Gallery -->
+      </div>
+
+      <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
+        <!-- Gallery -->
+        <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+           data-src="../../assets/img/1920x1080/img37.jpg"
+           data-fancybox="fancyboxGallery6"
+           data-caption="Front in frames - image #02"
+           data-speed="700"
+           data-is-infinite="true">
+          <img class="img-fluid" src="../../assets/img/450x225/img1.jpg" alt="Image Description">
+        </a>
+        <!-- End Gallery -->
+
+        <!-- Gallery -->
+        <a class="js-fancybox u-media-viewer" href="javascript:;"
+           data-src="../../assets/img/1920x1080/img38.jpg"
+           data-fancybox="fancyboxGallery6"
+           data-caption="Front in frames - image #03"
+           data-speed="700"
+           data-is-infinite="true">
+          <img class="img-fluid" src="../../assets/img/450x225/img2.jpg" alt="Image Description">
+
+          <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+            <span class="d-sm-inline-block d-lg-none btn btn-sm btn-white">
+              <span class="fas fa-expand mr-2"></span>
+              View Photos
+            </span>
+          </div>
+        </a>
+        <!-- End Gallery -->
+      </div>
+
+      <div class="col-lg-3 d-none d-lg-inline-block">
+        <!-- Gallery -->
+        <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+           data-src="../../assets/img/1920x1080/img39.jpg"
+           data-fancybox="fancyboxGallery6"
+           data-caption="Front in frames - image #04"
+           data-speed="700"
+           data-is-infinite="true">
+          <img class="img-fluid" src="../../assets/img/450x225/img3.jpg" alt="Image Description">
+        </a>
+        <!-- End Gallery -->
+
+        <!-- Gallery -->
+        <a class="js-fancybox u-media-viewer" href="javascript:;"
+           data-src="../../assets/img/1920x1080/img40.jpg"
+           data-fancybox="fancyboxGallery6"
+           data-caption="Front in frames - image #04"
+           data-speed="700"
+           data-is-infinite="true">
+          <img class="img-fluid" src="../../assets/img/450x225/img4.jpg" alt="Image Description">
+
+          <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+            <span class="d-none d-lg-inline-block btn btn-sm btn-white">
+              <span class="fas fa-expand mr-2"></span>
+              View Photos
+            </span>
+          </div>
+        </a>
+        <!-- End Gallery -->
+
+        <img class="js-fancybox d-none" alt="Image Description"
+             data-fancybox="fancyboxGallery6"
+             data-src="../../assets/img/1920x1080/img41.jpg"
+             data-caption="Front in frames - image #05"
+             data-speed="700"
+             data-is-infinite="true">
+        <img class="js-fancybox d-none" alt="Image Description"
+             data-caption="Front in frames - image #06"
+             data-src="../../assets/img/1920x1080/img42.jpg"
+             data-fancybox="fancyboxGallery6"
+             data-speed="700"
+             data-is-infinite="true">
+      </div>
+    </div>
+  </div>
+  <!-- End Gallery Section -->
+
+  <!-- Property Description Section -->
+  <div class="container space-bottom-2">
+
+
+    <!-- Address -->
+    <div class="justify-content-lg-between">
+      <div class="col-lg-8">
+        <h1 id="uni-address" class="h3 font-weight-medium">75 Laurier Ave E, Ottawa</h1>
+      </div>
+    </div>
+    <!-- End Address -->
+
+    <div class="row space-top-2">
+      <div class="col-lg-8 mb-9 mb-lg-0">
+      <ul  class=" nav-shadow nav-justified border">
+        </ul>
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <div class="tab-pane fade pt-6 show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
+            <!-- Title -->
+            <div class="mb-3">
+              <h2 class="h5">Key facts</h2>
+            </div>
+            <!-- End Title -->
+
+            <!-- Key Facts -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Fact List -->
+                <ul class="list-unstyled font-size-1 mb-0">
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Type:</span>
+                    <span id="uni-type" class="text-secondary">Public University</span>
+                  </li>
+
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Established</span>
+                    <span id="uni-established" class="text-secondary">1848</span>
+                  </li>
+
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Students</span>
+                    <span id="uni-students" class="text-secondary">42,000</span>
+                  </li>
+
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Language:</span>
+                    <span id="uni-language" class="text-secondary">English, French</span>
+                  </li>
+                </ul>
+                <!-- End Fact List -->
+              </div>
+
+              <div class="col-md-6">
+                <!-- Fact List -->
+                <ul class="list-unstyled font-size-1 mb-0">
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Nick Name:</span>
+                    <span id="uni-nickname" class="text-secondary">Gee-Gees</span>
+                  </li>
+
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Sports:</span>
+                    <span id="uni-sports" class="text-secondary">U Sports, OUA</span>
+                  </li>
+
+                  <li class="d-sm-flex justify-content-sm-between py-1">
+                    <span class="font-weight-medium">Website:</span>
+                    <a id="uni-website" href="" class="text-secondary" target="_blank">uottawa.ca</a>
+                  </li>
+                </ul>
+                <!-- End Fact List -->
+              </div>
+            </div>
+            <!-- End Key Facts -->
+
+            <hr class="my-7">
+            <!-- Title -->
+            <div class="mb-3">
+              <h3 class="h5">Description</h3>
+            </div>
+            <!-- End Title -->
+
+            <p id="uni-desc">The University of Ottawa is a bilingual public research university in Ottawa, Ontario, Canada. The main campus is in the residential neighbourhood of Sandy Hill, adjacent to Ottawa's Rideau Canal. The university offers a wide variety of academic programs, administered by ten faculties. It is a member of the U15, a group of research-intensive universities in Canada. The University of Ottawa is the largest English-French bilingual university in the world.</p>
+
+
+
+            <div class="collapse" id="collapseLinkExample">
+            </div>
+
+
+            <!-- Collapse Link -->
+            <a class="link-collapse" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample">
+              <span class="link-collapse__default">View More</span>
+              <span class="link-collapse__active">View Less</span>
+            </a>
+            <!-- End Collapse Link -->
+
+            <hr class="my-6">
+
+            <!-- Title -->
+            <div class="mb-3">
+              <h3 class="h5">Accessibility</h3>
+            </div>
+            <!-- End Title -->
+
+            <!-- Estimated Costs -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Accessibility List -->
+                <ul class="list-unstyled font-size-1 mb-0">
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Location</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Area safety</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Close to Malls</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+                </ul>
+                <!-- End Accessibility List -->
+              </div>
+
+              <div class="col-md-6">
+                <!-- Accessibility List -->
+                <ul class="list-unstyled font-size-1 mb-0">
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Transportation</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Technology</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="far fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center py-1">
+                    <span class="font-weight-medium">Tuition Costs</span>
+                    <div class="ml-auto">
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="fas fa-star text-warning ml-1"></span>
+                      <span class="far fa-star text-warning ml-1"></span>
+                      <span class="far fa-star text-warning ml-1"></span>
+                    </div>
+                  </li>
+                </ul>
+                <!-- End Accessibility List -->
+              </div>
+            </div>
+            <!-- End Estimated Costs -->
+
+            <hr class="my-6">
+
+
+          <!-- End House Items -->
+        </div>
+      </div>
+      <!-- End Slick Carousel -->
+    </div>
+    <!-- End Similar Properties Section -->
+  </div>
+</div>
+      </div>
+      </div>
+    </main>
+    <!-- ========== END MAIN ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <!-- Lists -->
+      <div class="border-bottom">
+        <div class="container space-2">
+          <div class="row justify-content-md-between">
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+              <h4 class="h6 font-weight-semi-bold">About</h4>
+              <!-- List Group -->
+              <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a class="list-group-item list-group-item-action" href="./faq.html">About</a></li>
+                <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
+              </ul>
+              <!-- End List Group -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Lists -->
+      <!-- Copyright -->
+      <div class="container text-center space-1">
+        <!-- Logo -->
+        <!-- End Logo -->
+        <p class="small text-muted">&copy; Internation Admissions. 2018. All rights reserved.</p>
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+    <!-- Go to Top -->
+    <a class="js-go-to u-go-to" href="#"
+      data-position='{"bottom": 15, "right": 15 }'
+      data-type="fixed"
+      data-offset-top="400"
+      data-compensation="#header"
+      data-show-effect="slideInUp"
+      data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+    <!-- JS Global Compulsory -->
+    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- JS Front -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/components/hs.unfold.js"></script>
+    <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="../../assets/js/components/hs.validation.js"></script>
+    <script src="../../assets/js/components/hs.focus-state.js"></script>
+    <script src="../../assets/js/components/hs.show-animation.js"></script>
+    <script src="../../assets/js/components/hs.sticky-block.js"></script>
+    <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+    <script src="../../assets/js/components/hs.svg-injector.js"></script>
+    <script src="../../assets/js/components/hs.go-to.js"></script>
+    <!-- Google Map Integration JS -->
+    <script src="../../assets/js/universities-data.js"></script>
+    <script src="../../assets/js/universities.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+            event: 'hover',
+            pageContainer: $('.container'),
+            breakpoint: 767.98,
+            hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+          // initialization of HSScrollNav component
+          $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+            duration: 700
+          });
+        });
+
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
+
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+            afterOpen: function () {
+              $(this).find('input[type="search"]').focus();
+            }
+          });
+
+          // initialization of malihu scrollbar
+          $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+          // initialization of show animations
+          $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate', {
+            rules: {
+              confirmPassword: {
+                equalTo: '#signupPassword'
+              }
+            }
+          });
+
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
+
+          // initialization of sticky blocks
+          $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+    </script>
+  </body>
+</html>
