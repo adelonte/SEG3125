@@ -22,8 +22,10 @@
   </head>
   <body>
     <!-- ========== HEADER ========== -->
-    <header id="header" class="u-header">
-      <div class="u-header__section" style="box-shadow: none">
+    <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+      data-header-fix-moment="500"
+      data-header-fix-effect="slide">
+      <div class="u-header__section">
         <!-- Topbar -->
         <div class="container u-header__hide-content pt-2">
           <div class="d-flex align-items-center">
@@ -56,10 +58,10 @@
               <div class="d-none d-sm-inline-block ml-sm-auto">
                 <ul class="list-inline mb-0">
                   <li class="list-inline-item mr-0">
-                    <a class="u-header__navbar-link" href="../pages/faq.html">About</a>
+                    <a class="u-header__navbar-link" href="./faq.html">FAQ</a>
                   </li>
                   <li class="list-inline-item mr-0">
-                    <a class="u-header__navbar-link" href="../pages/contact-us.html">Contact Us</a>
+                    <a class="u-header__navbar-link" href="./contact-us.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -79,7 +81,7 @@
               <span class="u-header__navbar-brand-text"></span>
             </a>
             <!-- End Logo -->
-            <!-- Responsive Toggle Button -->
+            <!--  Toggle Button -->
             <button type="button" class="navbar-toggler btn u-hamburger"
               aria-label="Toggle navigation"
               aria-expanded="false"
@@ -90,13 +92,13 @@
             <span class="u-hamburger__inner"></span>
             </span>
             </button>
-            <!-- End Responsive Toggle Button -->
+            <!-- End  Button -->
             <!-- Navigation -->
             <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
               <ul class="navbar-nav u-header__navbar-nav">
                 <!-- Home -->
                 <li class="nav-item hs-has-mega-menu u-header__nav-item">
-                  <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">Home</a>
+                  <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="index.html" aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <!-- End Home -->
                 <!-- Pages -->
@@ -157,7 +159,7 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn more</a>
+                        <a href="./universities.html?uni=mcgill" class="card-link">Learn more</a>
                       </div>
                     </div>
                   </div>
@@ -176,14 +178,14 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn more</a>
+                        <a href="./universities.html?uni=uottawa" class="card-link">Learn more</a>
                       </div>
                     </div>
                   </div>
                   <!--Card #3-->
                   <div id="uoft_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
-                      <img class="card-img-top" src="../assets/img/others/uofT.jpg" alt="University of Toronto">
+                      <img class="card-img-top" src="../assets/img/others/UofT.jpg" alt="University of Toronto">
                       <div class="card-body">
                         <h5 class="card-title">University of Toronto</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Toronto, Ontario</h6>
@@ -195,7 +197,7 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn More</a>
+                        <a href="./universities.html?uni=uoft" class="card-link">Learn More</a>
                       </div>
                     </div>
                   </div>
@@ -218,7 +220,7 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn more</a>
+                        <a href="./universities.html?uni=ubc" class="card-link">Learn more</a>
                       </div>
                     </div>
                   </div>
@@ -237,7 +239,7 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn more</a>
+                        <a href="./universities.html" class="card-link">Learn more</a>
                       </div>
                     </div>
                   </div>
@@ -256,7 +258,7 @@
                         </ul>
                       </div>
                       <div class="card-body">
-                        <a href="#" class="card-link">Learn More</a>
+                        <a href="./universities.html?uni=" class="card-link">Learn More</a>
                       </div>
                     </div>
                   </div>
@@ -678,24 +680,6 @@
     <!-- Page JS -->
     <script src="../../assets/js/results.js"></script>
     <!-- JS Plugins Init. -->
-    <script>
-      function searchFunc() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("searchUni");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          txtValue = a.textContent || a.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-      }
-    </script>
     <script>
       $(window).on('load', function () {
           // initialization of HSMegaMenu component

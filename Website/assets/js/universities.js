@@ -17,9 +17,6 @@ function searchFunc() {
 	}
 }
 
-//register search function
-document.getElementById("searchUni").addEventListener("input", searchFunc);
-
 function setUniInfo(uni) {
 	document.getElementById("uni-name").textContent = uni.name;
 	document.getElementById("uni-address").textContent = uni.address;
@@ -35,6 +32,18 @@ function setUniInfo(uni) {
 	link.textContent = uni.website.shortname;
 
 	document.getElementById("uni-details").classList.remove("d-none");
+}
+
+function goToUni() {
+	let url = window.location.href;
+	let query = url.substring(url.indexOf("?"));
+	let urlParams = new URLSearchParams(query);
+	let uni = urlParams.get("uni");
+	
+	let link = document.getElementById(uni);
+	if(link !== null || link !== undefined) {
+		link.click();
+	}
 }
 
 //Google Maps API bstrap
@@ -97,3 +106,8 @@ function initMap() {
 		});
 	}
 }
+
+//register search function
+document.getElementById("searchUni").addEventListener("input", searchFunc);
+//register uni click function
+window.addEventListener("load", goToUni);
