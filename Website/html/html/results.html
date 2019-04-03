@@ -131,7 +131,7 @@
       <!-- University Results Card Deck-->
       <div class="container d-lg-flex align-items-lg-center space-top-1">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators" style="filter: invert(100%);">
+          <ol id="indicators" class="carousel-indicators" style="filter: invert(100%);">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           </ol>
@@ -140,10 +140,10 @@
           </div>
           <div class="carousel-inner" style="padding:10px 100px 70px 100px ">
             <div class="container">
-              <div class="carousel-item active">
+              <div id="pg1" class="carousel-item active">
                 <div class="card-deck" >
                   <!--Card #1-->
-                  <div class="col-sm-4">
+                  <div id="mcgill_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;">
                       <img class="card-img-top" src="../assets/img/others/mcgill.jpg" alt="">
                       <div class="card-body">
@@ -162,7 +162,7 @@
                     </div>
                   </div>
                   <!--Card #2-->
-                  <div class="col-sm-4">
+                  <div id="uottawa_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                       <img class="card-img-top" src="../assets/img/others/uottawa.jpg" alt="">
                       <div class="card-body">
@@ -181,7 +181,7 @@
                     </div>
                   </div>
                   <!--Card #3-->
-                  <div class="col-sm-4">
+                  <div id="uoft_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                       <img class="card-img-top" src="../assets/img/others/uofT.jpg" alt="University of Toronto">
                       <div class="card-body">
@@ -201,10 +201,10 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div id="pg2" class="carousel-item">
                 <div class="card-deck" >
                   <!--Card #4-->
-                  <div class="col-sm-4">
+                  <div id="ubc_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                       <img class="card-img-top" src="../assets/img/others/ubc.jpg" alt="">
                       <div class="card-body">
@@ -223,7 +223,7 @@
                     </div>
                   </div>
                   <!--Card #5-->
-                  <div class="col-sm-4">
+                  <div id="dal_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                       <img class="card-img-top" src="../assets/img/others/dal.jpg" alt="">
                       <div class="card-body">
@@ -242,7 +242,7 @@
                     </div>
                   </div>
                   <!--Card #6-->
-                  <div class="col-sm-4">
+                  <div id="concordia_card" class="col-sm-4">
                     <div class="card" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                       <img class="card-img-top" src="../assets/img/others/concordia.jpg" alt="Concordia University">
                       <div class="card-body">
@@ -264,11 +264,11 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" style="filter: invert(100%);" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a id="prev-btn" class="carousel-control-prev" style="filter: invert(100%);" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" style="filter: invert(100%);" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a id="next-btn" class="carousel-control-next" style="filter: invert(100%);" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
           </a>
@@ -630,19 +630,7 @@
     <footer>
       <!-- Lists -->
       <div class="border-bottom">
-        <div class="container space-2">
-          <div class="row justify-content-md-between">
-            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-              <h4 class="h6 font-weight-semi-bold">About</h4>
-              <!-- List Group -->
-              <ul class="list-group list-group-flush list-group-borderless mb-0">
-                <li><a class="list-group-item list-group-item-action" href="./faq.html">About</a></li>
-                <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-              </ul>
-              <!-- End List Group -->
-            </div>
-          </div>
-        </div>
+      
       </div>
       <!-- End Lists -->
       <!-- Copyright -->
@@ -717,33 +705,33 @@
             breakpoint: 767.98,
             hideTimeOut: 0
           });
-      
+
           // initialization of svg injector module
           $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-      
+
           // initialization of HSScrollNav component
           $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
             duration: 700
           });
         });
-      
+
       $(document).on('ready', function () {
           // initialization of header
           $.HSCore.components.HSHeader.init($('#header'));
-      
+
           // initialization of unfold component
           $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
             afterOpen: function () {
               $(this).find('input[type="search"]').focus();
             }
           });
-      
+
           // initialization of malihu scrollbar
           $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-      
+
           // initialization of show animations
           $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-      
+
           // initialization of form validation
           $.HSCore.components.HSValidation.init('.js-validate', {
             rules: {
@@ -752,13 +740,13 @@
               }
             }
           });
-      
+
           // initialization of forms
           $.HSCore.components.HSFocusState.init();
-      
+
           // initialization of sticky blocks
           $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-      
+
           // initialization of go to
           $.HSCore.components.HSGoTo.init('.js-go-to');
         });

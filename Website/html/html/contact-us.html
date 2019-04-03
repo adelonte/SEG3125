@@ -300,19 +300,7 @@
     <footer>
       <!-- Lists -->
       <div class="border-bottom">
-        <div class="container space-2">
-          <div class="row justify-content-md-between">
-            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
-              <h4 class="h6 font-weight-semi-bold">About</h4>
-              <!-- List Group -->
-              <ul class="list-group list-group-flush list-group-borderless mb-0">
-                <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-                <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-              </ul>
-              <!-- End List Group -->
-            </div>
-          </div>
-        </div>
+    
       </div>
       <!-- End Lists -->
       <!-- Copyright -->
@@ -368,28 +356,28 @@
             breakpoint: 767.98,
             hideTimeOut: 0
           });
-      
+
           // initialization of svg injector module
           $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
         });
-      
+
       $(document).on('ready', function () {
           // initialization of header
           $.HSCore.components.HSHeader.init($('#header'));
-      
+
           // initialization of unfold component
           $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
             afterOpen: function () {
               $(this).find('input[type="search"]').focus();
             }
           });
-      
+
           // initialization of malihu scrollbar
           $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-      
+
           // initialization of show animations
           $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-      
+
           // initialization of form validation
           $.HSCore.components.HSValidation.init('.js-validate', {
             rules: {
@@ -398,14 +386,14 @@
               }
             }
           });
-      
+
           // initialization of forms
           $.HSCore.components.HSFocusState.init();
-      
+
           // initialization of go to
           $.HSCore.components.HSGoTo.init('.js-go-to');
         });
-      
+
         // initialization of google map
         function initMap() {
           $.HSCore.components.HSGMap.init('.js-g-map');
