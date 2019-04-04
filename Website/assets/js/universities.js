@@ -41,7 +41,7 @@ function goToUni() {
 	let uni = urlParams.get("uni");
 	
 	let link = document.getElementById(uni);
-	if(link !== null || link !== undefined) {
+	if(link) {
 		link.click();
 	}
 }
